@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
                   <Link to='work' smooth={true} duration={500}>
                       View Work
                   </Link>
-                  <span className='group-hover:rotate-90 duration-300'><FaArrowRight className='ml-3'/></span> </button>
+                </button>
             </div>
         </div>
     </div>
