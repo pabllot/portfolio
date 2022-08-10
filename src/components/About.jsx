@@ -15,7 +15,7 @@ const About = () => {
                         <p>Hi. I'm Pablo, nice to meet you. Please take a look around.</p>
                     </div>
                     <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem consectetur obcaecati dolor eaque, consequatur officiis rerum incidunt esse deserunt iure. Pariatur unde numquam velit eum quis recusandae perspiciatis quos?</p>
+                        <p>I'm 25 years old, an easy-going person, passionate about programming and eager to learn more every day, I hope you like what you see.</p>
                     </div>
             </div>
         </div>
