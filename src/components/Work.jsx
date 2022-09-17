@@ -1,7 +1,7 @@
 import React from 'react'
 import tikima from '../assets/tikima.png'
 import ecommerce from '../assets/ecommerce.png'
-import calculator from '../assets/calculator.png'
+import chores from '../assets/chores.png'
 import pablot from '../assets/pablot.png'
 import todo from '../assets/todo.png'
 import weather from '../assets/weather.png'
@@ -54,18 +54,18 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage: `url(${calculator})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div style={{backgroundImage: `url(${chores})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            Calculator App
+                            Chores App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='blank' href='https://pabllot.github.io/reactproject/'>
+                            <a target='blank' href='https://chores-ten.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/reactproject'>
+                            <a target='blank' href='https://github.com/pabllot/chores'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
