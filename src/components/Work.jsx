@@ -4,7 +4,7 @@ import ecommerce from '../assets/ecommerce.png'
 import chores from '../assets/chores.png'
 import pablot from '../assets/pablot.png'
 import todo from '../assets/todo.png'
-import weather from '../assets/weather.png'
+import series from '../assets/series.png'
 
 
 const Work = () => {
@@ -105,7 +105,7 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage: `url(${weather})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div style={{backgroundImage: `url(${series})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
