@@ -110,13 +110,13 @@ const Work = () => {
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            Weather Api App
+                            Full Stack Series App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='_blank' href='https://pabllot.github.io/Weather-API/'>
+                            <a target='_blank' href='https://favseriesapp.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/Weather-API'>
+                            <a target='blank' href='https://github.com/pabllot/favseriesfrontend'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
