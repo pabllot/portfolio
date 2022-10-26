@@ -12,10 +12,10 @@ const About = () => {
                 </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                     <div className='sm:text-right text-4xl font-bold'>
-                        <p>Hi. I'm Pablo, nice to meet you. Please take a look around.</p>
+                        <p>Nice to meet you. Please take a look around.</p>
                     </div>
                     <div>
-                        <p>I'm 25 years old, an easy-going person, passionate about programming and eager to learn more every day, I hope you like what you see.</p>
+                        <p>I'm 25 years old, an easy-going person, passionate about programming and eager to learn more and more every day, I hope you like what you see.</p>
                     </div>
             </div>
         </div>
