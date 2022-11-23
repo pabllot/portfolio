@@ -5,7 +5,7 @@
     z-index: 1;
     top: 12rem;
     right: 6rem;
-    opacity: 0.2;
+    opacity: 0.3;
     transition: .3s ease-in-out;      
 }
 
@@ -13,45 +13,59 @@
     opacity: 1;
 }
 
-.reactsmall1 {
+.html {
     position: absolute;
-    width: 9rem;
+    width: 7rem;
     z-index: 1;
-    top: 4rem;
-    left: 1rem;
-    opacity: 0.2;
+    top: 37rem;
+    left: 16rem;
+    opacity: 0.5;
     transition: .3s ease-in-out;      
 }
 
-.reactsmall1:hover {
+.html:hover {
     opacity: 1;
 }
 
-.reactsmall2 {
+.css {
     position: absolute;
-    width: 11rem;
+    width: 7rem;
     z-index: 1;
-    top: 33rem;
-    left: 29rem;
-    opacity: 0.2;
+    top: 37rem;
+    left: 24rem;
+    opacity: 0.5;
     transition: .3s ease-in-out;      
 }
 
-.reactsmall2:hover {
+.css:hover {
     opacity: 1;
 }
 
-.reactsmall {
+.js {
     position: absolute;
-    width: 4rem;
+    width: 7rem;
     z-index: 1;
-    top: 12rem;
-    right: 46rem;
-    opacity: 0.2;
+    top: 37rem;
+    left: 32rem;
+    opacity: 0.5;
     transition: .3s ease-in-out;      
 }
 
-.reactsmall:hover {
+.js:hover {
+    opacity: 1;
+}
+
+.ts {
+    position: absolute;
+    width: 7rem;
+    z-index: 1;
+    top: 37rem;
+    left: 40.5rem;
+    opacity: 0.5;
+    transition: .3s ease-in-out;      
+}
+
+.ts:hover {
     opacity: 1;
 }
 
@@ -66,42 +80,51 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .react {
-      display: none;
-    }
     .homep {
         font-size: 15px;
         margin-left: 5px;
     }
-
+    
     .homeh1 {
         margin-left: 5px;
     }
-
+    
     .homeh2 {
         margin-left: 5px;
         font-size: 23px;
     }
+    .react {
+        width: 10rem;
+        top: 8.5rem;
+        left: 7rem;
+        opacity: 0.8;
+    }
 
-    .reactsmall {
-        position: absolute;
-        width: 3rem;
-        top: 12rem;
-        right: 5rem;
-        opacity: 0.4;
-    }
-    .reactsmall1 {
+    .html {
         width: 5rem;
-        top: 6rem;
-        right: -3rem;
+        top: 41rem;
+        left: .7rem;
         opacity: 0.4;
     }
-    .reactsmall2 {
-        width: 12rem;
-        top: 35rem;
-        left: 6rem;
+    .css {
+        width: 5rem;
+        top: 41rem;
+        left: 6.6rem;
         opacity: 0.4;
     }
+    .js {
+        width: 5rem;
+        top: 41rem;
+        left: 12.6rem;
+        opacity: 0.4;
+    }
+    .ts {
+        width: 5rem;
+        top: 41rem;
+        left: 19rem;
+        opacity: 0.4;
+    }
+
 
     .cmargin {
         margin-top: 15rem;
@@ -120,13 +143,6 @@
 
   @media only screen and (max-width: 400px) {
 
-    .reactsmall2 {
-        width: 12rem;
-        top: 27rem;
-        left: 5rem;
-        opacity: 0.4;
-    }
-
     .homep {
         margin-left: 12px;
     }
@@ -140,4 +156,37 @@
     .btnm {
         margin-left: 12px;
     }
+
+    .react {
+        width: 6rem;
+        top: 7.6rem;
+        left: 8rem;
+        opacity: 0.9;
+    }
+
+    .html {
+        width: 5rem;
+        top: 31rem;
+        left: .3rem;
+        opacity: 0.8;
+    }
+    .css {
+        width: 5rem;
+        top: 31rem;
+        left: 5.3rem;
+        opacity: 0.8;
+    }
+    .js {
+        width: 5rem;
+        top: 31rem;
+        left: 10.6rem;
+        opacity: 0.8;
+    }
+    .ts {
+        width: 5rem;
+        top: 31rem;
+        left: 16.2rem;
+        opacity: 0.8;
+    }
+
   }
