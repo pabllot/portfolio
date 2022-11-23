@@ -98,8 +98,8 @@
     }
     .reactsmall2 {
         width: 12rem;
-        top: 27rem;
-        left: 5rem;
+        top: 35rem;
+        left: 6rem;
         opacity: 0.4;
     }
 
@@ -115,5 +115,15 @@
         font-size: 14px;    
         padding: 2px;
         border-radius: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+
+    .reactsmall2 {
+        width: 12rem;
+        top: 27rem;
+        left: 5rem;
+        opacity: 0.4;
     }
   }
