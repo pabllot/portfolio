@@ -126,4 +126,18 @@
         left: 5rem;
         opacity: 0.4;
     }
+
+    .homep {
+        margin-left: 12px;
+    }
+    .homeh1 {
+        margin-left: 12px;
+    }
+    .homeh2 {
+        margin-left: 12px;
+    }
+
+    .btnm {
+        margin-left: 12px;
+    }
   }
