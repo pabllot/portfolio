@@ -80,17 +80,17 @@ const Navbar = () => {
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' href='https://www.linkedin.com/in/pablo-teixeira-466497238/'>
+                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/pablo-teixeira-466497238/'>
                         Linkedin <FaLinkedin size={30}/>
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-600'>
-                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' href='https://github.com/pabllot'>
+                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' rel="noreferrer" href='https://github.com/pabllot'>
                         Github <FaGithub size={30}/>
                     </a>
                 </li>
                 <li className='w-[180px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-10px] duration-300 bg-yellow-600'>
-                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' href='https://www.instagram.com/inglescompablot/'>
+                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' rel="noreferrer" href='https://www.instagram.com/inglescompablot/'>
                         Instagram <FaInstagram size={30}/>
                     </a>
                 </li>

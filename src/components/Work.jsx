@@ -6,12 +6,13 @@ import pablot from '../assets/pablot.png'
 import music from '../assets/music.png'
 import series from '../assets/series.png'
 
+import './styles.css'
 
 const Work = () => {
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-            <div className='pb-8'>
+        <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+            <div className='pb-8 cmargin'>
                 <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Work</p>
                 <p className='py-6'>Check out some of my recent work</p>
             </div>
@@ -28,10 +29,10 @@ const Work = () => {
                             Tik Tok Clone App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='blank' href='https://tikima.vercel.app/'>
+                            <a target='blank' rel="noreferrer" href='https://tikima.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/tikima'>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/tikima'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
@@ -45,10 +46,10 @@ const Work = () => {
                             E-commerce App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='blank' href='https://nike-ecommerce-pied.vercel.app/'>
+                            <a target='blank' rel="noreferrer" href='https://nike-ecommerce-pied.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/nike-ecommerce'>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/nike-ecommerce'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
@@ -62,10 +63,10 @@ const Work = () => {
                             Chores App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='blank' href='https://chores-ten.vercel.app/'>
+                            <a target='blank' rel="noreferrer" href='https://chores-ten.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/chores'>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/chores'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
@@ -79,10 +80,10 @@ const Work = () => {
                             Comercial Website
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='blank' href='https://pabllot.github.io/inglescompablot/'>
+                            <a target='blank' rel="noreferrer" href='https://pabllot.github.io/inglescompablot/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/inglescompablot'>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/inglescompablot'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
@@ -96,10 +97,10 @@ const Work = () => {
                             Music Player App 
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='blank' href='https://spotifine.netlify.app/'>
+                            <a target='blank' rel="noreferrer" href='https://spotifine.netlify.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/music-player'>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/music-player'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
@@ -113,10 +114,10 @@ const Work = () => {
                             Full Stack Series App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='_blank' href='https://favseriesapp.vercel.app/'>
+                            <a target='_blank' rel="noreferrer" href='https://favseriesapp.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' href='https://github.com/pabllot/favseriesfrontend'>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/favseriesfrontend'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
