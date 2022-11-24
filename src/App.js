@@ -11,9 +11,9 @@ function App() {
     <div className='text-xl font-bold'>
       <Navbar />
       <Home />
+      <About />
       <Skills />
       <Work />
-      <About />
       <Contact />
     </div>
   );
