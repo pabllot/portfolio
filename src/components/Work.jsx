@@ -132,7 +132,7 @@ const Work = () => {
                 <p className='py-6'>That's a special personal project that I'm developing to help some private English students to practice their abilities. It's kind of a homework assignment they have for each lesson. </p>
             </div>
 
-            <div style={{backgroundImage: `url(${hw})`}} className='mbmb shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+            <div style={{backgroundImage: `url(${hw})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
