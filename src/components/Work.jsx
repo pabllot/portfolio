@@ -6,7 +6,7 @@ import pablot from '../assets/pablot.png'
 import music from '../assets/music.png'
 import series from '../assets/series.png'
 import hw from '../assets/hw.png'
-
+import cricket from '../assets/cricket.png'
 import './styles.css'
 
 const Work = () => {
@@ -56,29 +56,13 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage: `url(${chores})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            Chores App
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a target='blank' rel="noreferrer" href='https://chores-ten.vercel.app/'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/chores'>
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div style={{backgroundImage: `url(${pablot})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            Comercial Website
+                           My Comercial Website
                         </span>
                         <div className='pt-8 text-center'>
                             <a target='blank' rel="noreferrer" href='https://pabllot.github.io/inglescompablot/'>
@@ -127,10 +111,12 @@ const Work = () => {
                 
                 
             </div>
+
             <div className='pt-6'>
-                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Special Project</p>
-                <p className='py-6'>That's a special personal project that I'm developing to help some private English students to practice their abilities. It's kind of a homework assignment they have for each lesson. </p>
+                <p className='text-3xl font-bold inline border-b-4 text-gray-300 border-pink-600'>ORIGINAL PROJECTS</p>
+                <p className='py-6'>That's a special section where I put some of the projects I made from scratch totally on my own that I tought would have some functionality to me in my personal life.</p>
             </div>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
             <div style={{backgroundImage: `url(${hw})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
@@ -146,7 +132,43 @@ const Work = () => {
                            
                         </div>
                     </div>
+            </div>
+
+            <div style={{backgroundImage: `url(${cricket})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    {/* Hover Effects */}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            Drinking Game app
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a target='_blank' rel="noreferrer" href='https://cricket-psi.vercel.app/'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/favseriesfrontend'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                <div style={{backgroundImage: `url(${chores})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    {/* Hover Effects */}
+                <div className='opacity-0 group-hover:opacity-100'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            House Chores app
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a target='blank' rel="noreferrer" href='https://chores-ten.vercel.app/'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/chores'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
     </div>
   )
