@@ -109,6 +109,25 @@
     padding: 18px;
 }
 
+.lang-wrapper {
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: antiquewhite;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(20, 20, 152);
+}
 @media only screen and (max-width: 600px) {
     .homep {
         font-size: 15px;
@@ -130,30 +149,6 @@
         opacity: 0.8;
     }
 
-    .html {
-        width: 5rem;
-        top: 41rem;
-        left: .7rem;
-        opacity: 0.4;
-    }
-    .css {
-        width: 5rem;
-        top: 41rem;
-        left: 6.6rem;
-        opacity: 0.4;
-    }
-    .js {
-        width: 5rem;
-        top: 41rem;
-        left: 12.6rem;
-        opacity: 0.4;
-    }
-    .ts {
-        width: 5rem;
-        top: 41rem;
-        left: 19rem;
-        opacity: 0.4;
-    }
 
 
     .btnm {
@@ -191,29 +186,6 @@
         opacity: 0.9;
     }
 
-    .html {
-        width: 5rem;
-        top: 31rem;
-        left: .3rem;
-        opacity: 0.8;
-    }
-    .css {
-        width: 5rem;
-        top: 31rem;
-        left: 5.3rem;
-        opacity: 0.8;
-    }
-    .js {
-        width: 5rem;
-        top: 31rem;
-        left: 10.6rem;
-        opacity: 0.8;
-    }
-    .ts {
-        width: 5rem;
-        top: 31rem;
-        left: 16.2rem;
-        opacity: 0.8;
-    }
+   
 
   }

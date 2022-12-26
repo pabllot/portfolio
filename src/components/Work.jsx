@@ -11,7 +11,7 @@ import './styles.css'
 import { useState } from 'react'
 import { GrClose } from 'react-icons/gr'
 
-const Work = () => {
+const Work = ({english}) => {
     // states for info
     const [videoPlayer, setVideoPlayer] = useState(false);
     const [engilshPractice, setEngilshPractice] = useState();
@@ -23,15 +23,15 @@ const Work = () => {
     const [spotify, setSpotify] = useState();
 
 
-
+    // {`${english ? 'About' : 'Sobre'}`}
   return (
     <div name='work' className='w-full md:h-[1400px] text-gray-300 bg-[#0a192f]'>
         <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 
 
         <div className='pt-6'>
-                <p className='text-3xl font-bold inline border-b-4 text-gray-300 border-pink-600'>ORIGINAL PROJECTS</p>
-                <p className='py-6'>That's a special section where I put some of the projects I made from scratch.</p>
+                <p className='text-3xl font-bold inline border-b-4 text-gray-300 border-pink-600'>{`${english ? 'ORIGINAL PROJECTS' : 'PROJETOS ORIGINAIS'}`}</p>
+                <p className='py-6'>{`${english ? "That's a special section where I put some of the projects I made from scratch" : 'Essa é uma seção especial onde coloco os projetos originais que fiz sozinho.'}`}</p>
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
 
@@ -73,7 +73,7 @@ const Work = () => {
                             </a>
                             <div>
                                 <div className={`${engilshPractice ? 'info' : 'noShow'}`}>
-                                    <p className='text'>Lpipipipipipipnsectetur adipisicing elit. Maxime, totam aliquam hic beatae porro eos quae modi consequuntur expedita laborum nobis, perferendis similique, deleniti voluptas perspiciatis optio velit sequi corporis.</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
                                     <button className='btn-close' onClick={() => setEngilshPractice(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setEngilshPractice(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -134,8 +134,8 @@ const Work = () => {
             </div>    
 
             <div className='pt-8'>
-                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>TUTORIAL PROJECTS</p>
-                <p className='py-6'>Projects made from tutorials in order to improve my skills</p>
+                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>{`${english ? 'TUTORIAL PROJECTS' : 'PROJETOS DE TUTORIAIS'}`}</p>
+                <p className='py-6'>{`${english ? 'Projects made from tutorials in order to improve my skills.' : 'Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.'}`}</p>
             </div>
 
             {/* container */}

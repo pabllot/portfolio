@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/
 import Logo from '../assets/logo.png'
 import { Link } from 'react-scroll'
 
-const Navbar = () => {
+const Navbar = ({english}) => {
     const [hamburguer, setHamburguer] = useState(false)
     const handleClick = () => setHamburguer(prev => !prev)
 
@@ -18,27 +18,27 @@ const Navbar = () => {
         <ul className='hidden md:flex'>
             <li>
                 <Link to='home' smooth={true} duration={500}>
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link to='about' smooth={true} duration={500}>
-                    About
+                    {`${english ? 'Home' : 'Home'}`}
                 </Link>
             </li>
             <li>
                 <Link to='skills' smooth={true} duration={500}>
-                    Skills
+                {`${english ? 'Skills' : 'Habilidades'}`}
                 </Link>
             </li>
             <li>
                 <Link to='work' smooth={true} duration={500}>
-                    Work
+                {`${english ? 'Work' : 'Projetos'}`}
+                </Link>
+            </li>
+            <li>
+                <Link to='about' smooth={true} duration={500}>
+                {`${english ? 'About' : 'Sobre'}`}
                 </Link>
             </li>
             <li>
                 <Link to='contact' smooth={true} duration={500}>
-                    Contact
+                {`${english ? 'Contact' : 'Contato'}`}
                 </Link>
             </li>
             
