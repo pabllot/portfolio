@@ -8,7 +8,7 @@ const Navbar = ({english}) => {
     const handleClick = () => setHamburguer(prev => !prev)
 
   return (
-    <div className='fixed w-screen h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='fixed z-50 w-screen h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
         <div>
             <img src={Logo} alt='Logo' style={{width: '50px'}}/>
         </div>
