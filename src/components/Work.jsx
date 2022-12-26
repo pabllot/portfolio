@@ -134,7 +134,7 @@ const Work = ({english}) => {
             </div>    
 
             <div className='pt-8'>
-                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>{`${english ? 'TUTORIAL PROJECTS' : 'PROJETOS DE TUTORIAIS'}`}</p>
+                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>{`${english ? 'TUTORIAL PROJECTS' : 'PROJETOS TUTORIAIS'}`}</p>
                 <p className='py-6'>{`${english ? 'Projects made from tutorials in order to improve my skills.' : 'Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.'}`}</p>
             </div>
 
