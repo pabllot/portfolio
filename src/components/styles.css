@@ -80,6 +80,39 @@
     color: white;
 }
 
+.relative {
+    position: relative;
+}
+
+.noShow {
+    display: none;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(90, 99, 229);
+    width: 477px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    
+}
+
+.btn-close{
+    flex: 1;
+    font-size: 40px;
+}
+
+.text {
+    flex: 8;
+   text-align: center;
+    height: 100%;
+    padding: 18px;
+}
+
 @media only screen and (max-width: 600px) {
     .homep {
         font-size: 15px;
@@ -126,13 +159,6 @@
         opacity: 0.4;
     }
 
-
-    .cmargin {
-        margin-top: 15rem;
-    }
-    .smargin {
-        margin-top: 7rem;
-    }
 
     .btnm {
         margin-left: 5px;
