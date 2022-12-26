@@ -110,10 +110,10 @@
 }
 
 .lang-wrapper {
-    margin-top: 7rem;
+    margin-top: 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
@@ -164,6 +164,12 @@
         align-items: center;
         padding-top: 1rem;
     }
+
+    .lang-wrapper{
+        justify-content: center;
+        margin-top: 7rem;
+
+    }
   }
 
   @media only screen and (max-width: 400px) {
@@ -198,6 +204,12 @@
 
     .info {
         width: 357px;
+    }
+
+    .lang-wrapper{
+        justify-content: center;
+        margin-top: 7rem;
+
     }
 
    
