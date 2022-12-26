@@ -8,7 +8,7 @@ import Work from './components/Work';
 
 function App() {
   return (
-    <div className='text-xl font-bold'>
+    <div className='bg-[#0a192f] text-xl font-bold'>
       <Navbar />
       <Home />
       <Skills />
