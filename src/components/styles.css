@@ -152,14 +152,16 @@
 
 
     .btnm {
-        margin-left: 5px;
         font-size: 14px;    
         padding: 2px;
-        border-radius: 20px;
     }
 
     .info {
         width: 382px;
+    }
+
+    .aligning {
+        align-items: center;
     }
   }
 
@@ -175,15 +177,16 @@
         margin-left: 12px;
     }
 
-    .btnm {
-        margin-left: 12px;
-    }
 
     .react {
         width: 6rem;
         top: 7.6rem;
         left: 9rem;
         opacity: 0.9;
+    }
+
+    .aligning {
+        align-items: center;
     }
 
    

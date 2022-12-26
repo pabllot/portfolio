@@ -51,7 +51,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${videoPlayer ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setVideoPlayer(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setVideoPlayer(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -73,7 +73,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${engilshPractice ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setEngilshPractice(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setEngilshPractice(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -99,7 +99,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${cricketInfo ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setCricketInfo(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setCricketInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -123,7 +123,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${choresInfo ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setChoresInfo(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setChoresInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -158,7 +158,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${tikTok ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setTikTok(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setTikTok(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -182,7 +182,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${ecommerceInfo ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setEcommerceInfo(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setEcommerceInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -207,7 +207,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${inglesComPablot ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setInglesComPablot(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setInglesComPablot(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
@@ -231,7 +231,7 @@ const Work = ({english}) => {
                             </a>
                             <div>
                                 <div className={`${spotify ? 'info' : 'noShow'}`}>
-                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW MINUTES</p>
+                                    <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
                                     <button className='btn-close' onClick={() => setSpotify(false)} ><GrClose/></button>
                                 </div>
                                 <button  onClick={() => setSpotify(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>

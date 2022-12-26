@@ -16,7 +16,7 @@ const Home = ({english, setEnglish}) => {
         {/* container */}
         <img className='react' src={ReactImg} alt='react icon wrapper'/>
        
-        <div className=' max-w-[1000px]  mx-auto px- flex flex-col justify-center h-full '>
+        <div className='aligning max-w-[1000px]  mx-auto px- flex flex-col justify-center h-full '>
             <p className='text-pink-600 homep'>{` ${english ? 'Hi, welcome to my portfolio. My name is' : 'Olá, bem vindo ao meu portifólio, meu nome é'}`}</p>
             <h1 className='homeh1 text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Pablo Teixeira</h1>
             <h2 className='homeh2 text-4xl sm:text=7xl font-bold text-[#8892b0]'>{`${english ? 'Please take a look around' : 'Fique à vontade'}`}</h2>            
