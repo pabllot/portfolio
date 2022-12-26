@@ -46,9 +46,9 @@ const Work = ({english}) => {
                             <a target='blank' rel="noreferrer" href='https://next-desafio-video.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
+                            {/*<a target='blank'  rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
+                            </a>*/}
                             <div>
                                 <div className={`${videoPlayer ? 'info' : 'noShow'}`}>
                                     <p className='text'>UNDER DEVELOPMENTT, DESCRIPTION COMING IN A FEW DAYS</p>
@@ -70,6 +70,9 @@ const Work = ({english}) => {
                         <div className='pt-8 text-center'>
                             <a target='blank' rel="noreferrer" href='https://inglescompabloth.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a target='blank' rel="noreferrer" href='https://github.com/pabllot/homework/'>
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                             <div>
                                 <div className={`${engilshPractice ? 'info' : 'noShow'}`}>
