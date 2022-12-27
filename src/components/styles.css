@@ -89,17 +89,30 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: rgb(90, 99, 229);
+    background-image: linear-gradient(
+        to right,
+        rgba(23, 44, 75, 1),
+        hsla(242, 52%, 33%, 1)
+    );
     width: 477px;
     height: 250px;
     left: 0;
     top: 0;
+    border-radius: 10px;
     
 }
 
 .btn-close{
     flex: 1;
     font-size: 40px;
+    margin-top: 10px;
+
+   
+}
+
+.btn-close > svg {
+    border-radius: 10px;
+    color: white;
 }
 
 .text {
@@ -107,6 +120,7 @@
    text-align: center;
     height: 100%;
     padding: 18px;
+    font-size: 17px;
 }
 
 .lang-wrapper {
@@ -157,7 +171,11 @@
     }
 
     .info {
-        width: 382px;
+        width: 48vw;
+    }
+
+    .text {
+        font-size: 15px;
     }
 
     .aligning {
@@ -172,7 +190,7 @@
     }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 640px) {
 
     .homep {
         margin-left: 12px;
@@ -203,7 +221,17 @@
     }
 
     .info {
-        width: 357px;
+        width: 90vw;
+    }
+
+    .btn-close{
+        flex: 1;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .text {
+        font-size: 14px;
     }
 
     .lang-wrapper{
