@@ -38,11 +38,11 @@ const Work = ({english}) => {
             <div style={{backgroundImage: `url(${video})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100 '>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100 '>
+                        <span className=' text-2xl font-bold text-white tracking-wider'>
                            Video Player app
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://next-desafio-video.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -56,7 +56,7 @@ const Work = ({english}) => {
                                     'Esse é o meu projeto favorito até agora. Eu o desenvolvi sozinho para aplicar a uma posição de front-end, aprendi muito com isso. É um aplicativo de player de vídeo cheio de funcionalidades especificadas pelo cliente.'}</p>
                                     <button className='btn-close' onClick={() => setVideoPlayer(false)} ><AiFillCloseCircle /></button>
                                 </div>
-                                <button  onClick={() => setVideoPlayer(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setVideoPlayer(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
@@ -65,11 +65,11 @@ const Work = ({english}) => {
             <div style={{backgroundImage: `url(${hw})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className=' text-2xl font-bold text-white tracking-wider'>
                             English practice app
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://inglescompabloth.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -83,9 +83,8 @@ const Work = ({english}) => {
                                     'Esse é um projeto que fiz para ajudar meus alunos a praticar o que aprenderam em suas aulas, para cada lição há 9 perguntas que eles devem traduzir de acordo'}</p>
                                     <button className='btn-close' onClick={() => setEngilshPractice(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setEngilshPractice(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
-                            </div>
-                           
+                                <button  onClick={() => setEngilshPractice(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                            </div>                           
                         </div>
                     </div>
             </div>
@@ -93,11 +92,11 @@ const Work = ({english}) => {
             <div style={{backgroundImage: `url(${cricket})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             Drinking Game app
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='_blank' rel="noreferrer" href='https://cricket-psi.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -110,7 +109,7 @@ const Work = ({english}) => {
                                     "Esse é um jogo de bebida que eu e meus amigos estamos acostumados a jogar. Tínhamos que ter sempre um par de dados conosco, mas agora podemos jogar neste app. Eu também implementei todas as funcionalidades do jogo, então agora não tem como trapacear"}</p>
                                     <button className='btn-close' onClick={() => setCricketInfo(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setCricketInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setCricketInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
@@ -118,11 +117,11 @@ const Work = ({english}) => {
                 <div style={{backgroundImage: `url(${chores})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                <div className='opacity-0 group-hover:opacity-100'>
+                <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             House Chores app
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://chores-ten.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -136,7 +135,7 @@ const Work = ({english}) => {
                                     "Construí esse projeto do zero para ter um app que ajudasse eu e meus colegas de quarto a organizar melhor nossa rotina, então implementei uma lógica que podemos digitar o dia atual e temos as tarefas que cada um de nós deve fazer neste dia ."}</p>
                                     <button className='btn-close' onClick={() => setChoresInfo(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setChoresInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setChoresInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
@@ -155,11 +154,11 @@ const Work = ({english}) => {
                 <div style={{backgroundImage: `url(${tikima})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             Tik Tok Clone App
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://tikima.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -173,7 +172,7 @@ const Work = ({english}) => {
                                     "Esse é um aplicativo clone do TikTok que inclui Autenticação Google, a capacidade de fazer upload, publicar, compartilhar, comentar e curtir os vídeos; filtragem por categorias e funcionalidades de pesquisa avançada, páginas de perfil, contas sugeridas, design responsivo personalizado e muito mais."}</p>
                                     <button className='btn-close' onClick={() => setTikTok(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setTikTok(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setTikTok(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
@@ -181,11 +180,11 @@ const Work = ({english}) => {
                 <div style={{backgroundImage: `url(${ecommerce})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             E-commerce App
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://nike-ecommerce-pied.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -199,7 +198,7 @@ const Work = ({english}) => {
                                     "Esse é um Nike Ecommerce onde implementei o gerenciamento de estado avançado de todo o aplicativo usando React Context API. Práticas recomendadas do Next.js usando Server Side Rendering e integração do Stripe para gerenciar pagamentos."}</p>
                                     <button className='btn-close' onClick={() => setEcommerceInfo(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setEcommerceInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setEcommerceInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
@@ -208,11 +207,11 @@ const Work = ({english}) => {
                 <div style={{backgroundImage: `url(${pablot})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                            My Comercial Website
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://pabllot.github.io/inglescompablot/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -226,7 +225,7 @@ const Work = ({english}) => {
                                     "Meu primeiro grande projeto, construí um site profissional para me ajudar a encontrar mais alunos como professor de inglês. Eu usei vanilla javascript, css e html neste projeto."}</p>
                                     <button className='btn-close' onClick={() => setInglesComPablot(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setInglesComPablot(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setInglesComPablot(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
@@ -234,11 +233,11 @@ const Work = ({english}) => {
                 <div style={{backgroundImage: `url(${music})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             Music Player App 
                         </span>
-                        <div className='pt-8 text-center'>
+                        <div className='pt-8 flex text-center'>
                             <a target='blank' rel="noreferrer" href='https://spotifine.netlify.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
@@ -252,7 +251,7 @@ const Work = ({english}) => {
                                     "Neste projeto desenvolvi um aplicativo para escutar música semelhante ao spotify com todas as suas funcionalidades, foi uma ótima experiência e aprendi muito com isso"}</p>
                                     <button className='btn-close' onClick={() => setSpotify(false)} ><AiFillCloseCircle/></button>
                                 </div>
-                                <button  onClick={() => setSpotify(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Info</button>
+                                <button  onClick={() => setSpotify(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
                     </div>
