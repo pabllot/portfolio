@@ -9,8 +9,9 @@ import Typescript from '../assets/typescript.svg';
 
 
 
-
 const Home = ({english, setEnglish}) => {
+  let shadowEnglish = english ? '0 1px 10px blue' : ''
+  let shadowPortuguese = !english ? '0 1px 10px blue' : ''
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
         {/* container */}
@@ -28,8 +29,8 @@ const Home = ({english, setEnglish}) => {
             </div>
             </Link>
             <div className='lang-wrapper'>
-              <div className='lang' onClick={()=>setEnglish(false)}>Português</div>
-              <div className='lang' onClick={()=>setEnglish(true)}>English</div>
+              <div className='lang' style={{boxShadow: shadowPortuguese}}  onClick={()=>setEnglish(false)}>Português</div>
+              <div className='lang' style={{boxShadow: shadowEnglish}} onClick={()=>setEnglish(true)}>English</div>
             </div>
         </div>
     </div>
