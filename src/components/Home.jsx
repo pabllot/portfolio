@@ -2,10 +2,7 @@ import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import ReactImg from '../assets/test.png';
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import Typescript from '../assets/typescript.svg';
+
 
 
 
