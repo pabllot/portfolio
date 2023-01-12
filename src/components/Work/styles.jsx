@@ -4,6 +4,24 @@ export const Container = styled.div`
     width: 100%;
     color: rgb(209 213 219);
     background-color: rgb(10 25 47);
+
+    .noShow {
+        display: none;
+    }
+
+    .info {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-image: linear-gradient(to right,rgba(23, 44, 75, 1),hsla(242, 52%, 33%, 1));
+        width: 477px;
+        height: 250px;
+        left: 0;
+        top: 0;
+        border-radius: 10px;        
+    }
+
     @media (min-width: 768px) {height: 1400px;}
 `
 
@@ -121,3 +139,4 @@ export const Button = styled.button`
 `
 
 export const Href = styled.a``
+

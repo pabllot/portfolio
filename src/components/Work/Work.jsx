@@ -1,4 +1,6 @@
-import React from 'react'
+import { Button, ButtonClose, ButtonContainer, Card, CardHover, Container, Content, Href, InfoContainer, Paragraph, Span, SubContainer, SubTitle, Title, Wrapper } from './styles'
+import { AiFillCloseCircle } from 'react-icons/ai'
+import { useState } from 'react'
 import tikima from '../../assets/tikima.png'
 import ecommerce from '../../assets/ecommerce.png'
 import chores from '../../assets/chores.png'
@@ -7,20 +9,16 @@ import music from '../../assets/music.png'
 import video from '../../assets/video.png'
 import hw from '../../assets/hm.png'
 import cricket from '../../assets/cricket.png'
-import '../styles.css'
-import { useState } from 'react'
-import { AiFillCloseCircle } from 'react-icons/ai'
-import { Button, ButtonClose, ButtonContainer, Card, CardHover, Container, Content, Href, InfoContainer, Paragraph, Span, SubContainer, SubTitle, Title, Wrapper } from './styles'
 
 const Work = ({english}) => {
     const [videoPlayer, setVideoPlayer] = useState(false);
-    const [engilshPractice, setEngilshPractice] = useState();
-    const [cricketInfo, setCricketInfo] = useState();
-    const [choresInfo, setChoresInfo] = useState();
-    const [tikTok, setTikTok] = useState();
-    const [ecommerceInfo, setEcommerceInfo] = useState();
-    const [inglesComPablot, setInglesComPablot] = useState();
-    const [spotify, setSpotify] = useState();
+    const [engilshPractice, setEngilshPractice] = useState(false);
+    const [cricketInfo, setCricketInfo] = useState(false);
+    const [choresInfo, setChoresInfo] = useState(false);
+    const [tikTok, setTikTok] = useState(false);
+    const [ecommerceInfo, setEcommerceInfo] = useState(false);
+    const [inglesComPablot, setInglesComPablot] = useState(false);
+    const [spotify, setSpotify] = useState(false);
 
     return (
     <Container name='work' >
@@ -36,7 +34,6 @@ const Work = ({english}) => {
             </Wrapper>
             <Content>
                 <Card className='group' style={{backgroundImage: `url(${video})`}}>                    
-                    {/* Hover Effects */}
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                            Video Player app
@@ -55,15 +52,13 @@ const Work = ({english}) => {
                                     'Esse é o meu projeto favorito até agora. Eu o desenvolvi sozinho para aplicar a uma posição de front-end, aprendi muito com isso. É um aplicativo de player de vídeo cheio de funcionalidades especificadas pelo cliente.'}</Paragraph>
                                     <ButtonClose onClick={() => setVideoPlayer(false)} ><AiFillCloseCircle /></ButtonClose>
                                 </div>
-                                <button onClick={() => setVideoPlayer(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button onClick={() => setVideoPlayer(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                     </CardHover>
                 </Card>
 
-            <Card style={{backgroundImage: `url(${hw})`}} className='group'>
-                    
-                    {/* Hover Effects */}
+            <Card style={{backgroundImage: `url(${hw})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                             English practice app
@@ -82,15 +77,13 @@ const Work = ({english}) => {
                                     'Esse é um projeto que fiz para ajudar meus alunos a praticar o que aprenderam em suas aulas, para cada lição há 9 perguntas que eles devem traduzir de acordo'}</Paragraph>
                                     <ButtonClose onClick={() => setEngilshPractice(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setEngilshPractice(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setEngilshPractice(true)}>+Info</Button>
                             </InfoContainer>                           
                         </ButtonContainer>
                     </CardHover>
             </Card>
 
-            <Card style={{backgroundImage: `url(${cricket})`}} className='group'>
-                    
-                    {/* Hover Effects */}
+            <Card style={{backgroundImage: `url(${cricket})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                             Drinking Game app
@@ -108,14 +101,13 @@ const Work = ({english}) => {
                                     "Esse é um jogo de bebida que eu e meus amigos estamos acostumados a jogar. Tínhamos que ter sempre um par de dados conosco, mas agora podemos jogar neste app. Eu também implementei todas as funcionalidades do jogo, então agora não tem como trapacear"}</Paragraph>
                                     <ButtonClose onClick={() => setCricketInfo(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setCricketInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setCricketInfo(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                     </CardHover>
-                </Card>
-                <Card style={{backgroundImage: `url(${chores})`}} className='group'>
-                    
-                    {/* Hover Effects */}
+            </Card>
+
+            <Card style={{backgroundImage: `url(${chores})`}} className='group'>                    
                 <CardHover className='group-hover:opacity-100'>
                         <Span>
                             House Chores app
@@ -134,11 +126,11 @@ const Work = ({english}) => {
                                     "Construí esse projeto do zero para ter um app que ajudasse eu e meus colegas de quarto a organizar melhor nossa rotina, então implementei uma lógica que podemos digitar o dia atual e temos as tarefas que cada um de nós deve fazer neste dia ."}</Paragraph>
                                     <ButtonClose onClick={() => setChoresInfo(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setChoresInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setChoresInfo(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
-                    </CardHover>
-                </Card>
+                </CardHover>
+            </Card>
             </Content>    
 
             <Wrapper>
@@ -146,13 +138,8 @@ const Work = ({english}) => {
                 <SubTitle>{`${english ? 'Projects made from tutorials in order to improve my skills.' : 'Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.'}`}</SubTitle>
             </Wrapper>
 
-            {/* container */}
-            <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
-                
-                {/* Grid item */}
-                <Card style={{backgroundImage: `url(${tikima})`}} className='group'>
-                    
-                    {/* Hover Effects */}
+            <Content>                
+                <Card style={{backgroundImage: `url(${tikima})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                             Tik Tok Clone App
@@ -171,14 +158,13 @@ const Work = ({english}) => {
                                     "Esse é um aplicativo clone do TikTok que inclui Autenticação Google, a capacidade de fazer upload, publicar, compartilhar, comentar e curtir os vídeos; filtragem por categorias e funcionalidades de pesquisa avançada, páginas de perfil, contas sugeridas, design responsivo personalizado e muito mais."}</Paragraph>
                                     <ButtonClose onClick={() => setTikTok(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setTikTok(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setTikTok(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                     </CardHover>
                 </Card>
                 <Card style={{backgroundImage: `url(${ecommerce})`}} className='group'>
                     
-                    {/* Hover Effects */}
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                             E-commerce App
@@ -197,15 +183,13 @@ const Work = ({english}) => {
                                     "Esse é um Nike Ecommerce onde implementei o gerenciamento de estado avançado de todo o aplicativo usando React Context API. Práticas recomendadas do Next.js usando Server Side Rendering e integração do Stripe para gerenciar pagamentos."}</Paragraph>
                                     <ButtonClose onClick={() => setEcommerceInfo(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setEcommerceInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setEcommerceInfo(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                     </CardHover>
                 </Card>
                 
-                <Card style={{backgroundImage: `url(${pablot})`}} className='group'>
-                    
-                    {/* Hover Effects */}
+                <Card style={{backgroundImage: `url(${pablot})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                            My Comercial Website
@@ -224,14 +208,13 @@ const Work = ({english}) => {
                                     "Meu primeiro grande projeto, construí um site profissional para me ajudar a encontrar mais alunos como professor de inglês. Eu usei vanilla javascript, css e html neste projeto."}</Paragraph>
                                     <ButtonClose onClick={() => setInglesComPablot(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setInglesComPablot(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setInglesComPablot(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                     </CardHover>
                 </Card>
-                <Card style={{backgroundImage: `url(${music})`}} className='group'>
-                    
-                    {/* Hover Effects */}
+
+                <Card style={{backgroundImage: `url(${music})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
                             Music Player App 
@@ -250,12 +233,13 @@ const Work = ({english}) => {
                                     "Neste projeto desenvolvi um aplicativo para escutar música semelhante ao spotify com todas as suas funcionalidades, foi uma ótima experiência e aprendi muito com isso"}</Paragraph>
                                     <ButtonClose onClick={() => setSpotify(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
-                                <button  onClick={() => setSpotify(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
+                                <Button  onClick={() => setSpotify(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                     </CardHover>
-                </Card>            
-            </div>        
+                </Card>   
+
+            </Content>        
         </SubContainer>
     </Container>
   )
