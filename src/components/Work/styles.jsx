@@ -65,9 +65,59 @@ export const Card = styled.div`
 `
 
 export const CardHover =styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
 `
+
+export const Span = styled.span`
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+`
+
+export const ButtonContainer = styled.div`
+    padding-top: 2rem;
+    display: flex;
+    text-align: center;
+`
+
+export const InfoContainer = styled.div``
+
+export const Paragraph = styled.p`
+    flex: 8;
+    text-align: center;
+    height: 100%;
+    padding: 18px;
+    font-size: 17px;
+`
+
+export const ButtonClose = styled.button`
+    flex: 1;
+    font-size: 40px;
+    margin-top: 10px;
+    > svg {
+        border-radius: 10px;
+        color: white;
+    }
+    `
+export const Button = styled.button`
+    text-align: center;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin: 0.5rem;
+    background-color: white;
+    color: rgb(55 65 81);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+`
+
+export const Href = styled.a``
