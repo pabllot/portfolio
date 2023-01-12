@@ -1,15 +1,15 @@
 import React from 'react';
 
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import ReactImg from '../assets/react.png';
-import Node from '../assets/node.png';
-import GitHub from '../assets/github.png';
-import Styled from '../assets/styled-components.png';
-import Typescript from '../assets/typescript.svg';
+import HTML from '../../assets/html.png';
+import CSS from '../../assets/css.png';
+import JavaScript from '../../assets/javascript.png';
+import ReactImg from '../../assets/react.png';
+import Node from '../../assets/node.png';
+import GitHub from '../../assets/github.png';
+import Styled from '../../assets/styled-components.png';
+import Typescript from '../../assets/typescript.svg';
 
-import './styles.css'
+import '../styles.css'
 
 const Skills = ({english}) => {
   return (
@@ -22,7 +22,7 @@ const Skills = ({english}) => {
             </div>
 
             <div className=' w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                <div className='icon shadow-md shadow-[#040c16]'>
+                <div className='icon p-4 shadow-md shadow-[#040c16]'>
                    <img className='w-20 mx-auto' src={HTML} alt='html icon'/>
                    <p className='my-4'>HTML</p>
                 </div>

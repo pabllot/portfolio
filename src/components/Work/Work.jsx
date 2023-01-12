@@ -1,18 +1,18 @@
 import React from 'react'
-import tikima from '../assets/tikima.png'
-import ecommerce from '../assets/ecommerce.png'
-import chores from '../assets/chores.png'
-import pablot from '../assets/pablot.png'
-import music from '../assets/music.png'
-import video from '../assets/video.png'
-import hw from '../assets/hm.png'
-import cricket from '../assets/cricket.png'
-import './styles.css'
+import tikima from '../../assets/tikima.png'
+import ecommerce from '../../assets/ecommerce.png'
+import chores from '../../assets/chores.png'
+import pablot from '../../assets/pablot.png'
+import music from '../../assets/music.png'
+import video from '../../assets/video.png'
+import hw from '../../assets/hm.png'
+import cricket from '../../assets/cricket.png'
+import '../styles.css'
 import { useState } from 'react'
 import { AiFillCloseCircle } from 'react-icons/ai'
+import { Card, CardHover, Container, Content, SubContainer, SubTitle, Title, Wrapper } from './styles'
 
 const Work = ({english}) => {
-    // states for info
     const [videoPlayer, setVideoPlayer] = useState(false);
     const [engilshPractice, setEngilshPractice] = useState();
     const [cricketInfo, setCricketInfo] = useState();
@@ -22,23 +22,22 @@ const Work = ({english}) => {
     const [inglesComPablot, setInglesComPablot] = useState();
     const [spotify, setSpotify] = useState();
 
-
-    // {`${english ? 'About' : 'Sobre'}`}
-  return (
-    <div name='work' className='w-full md:h-[1400px] text-gray-300 bg-[#0a192f]'>
-        <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    return (
+    <Container name='work' >
+        <SubContainer>
 
 
-        <div className='pt-6'>
-                <p className='text-3xl font-bold inline border-b-4 text-gray-300 border-pink-600'>{`${english ? 'ORIGINAL PROJECTS' : 'PROJETOS ORIGINAIS'}`}</p>
-                <p className='py-6'>{`${english ? "That's a special section where I put some of the projects I made from scratch" : 'Essa é uma seção especial onde coloco os projetos originais que fiz sozinho.'}`}</p>
-            </div>
-            <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
+            <Wrapper>
+                <Title>{`${english ? 'ORIGINAL PROJECTS' : 'PROJETOS ORIGINAIS'}`}</Title>
+                <SubTitle>{`${english ? "That's a special section where I put some of the projects I made from scratch" : 'Essa é uma seção especial onde coloco os projetos originais que fiz sozinho.'}`}</SubTitle>
+            </Wrapper>
 
-            <div style={{backgroundImage: `url(${video})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+            <Content>
+
+            <Card className='group' style={{backgroundImage: `url(${video})`}}>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100 '>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className=' text-2xl font-bold text-white tracking-wider'>
                            Video Player app
                         </span>
@@ -46,9 +45,9 @@ const Work = ({english}) => {
                             <a target='blank' rel="noreferrer" href='https://next-desafio-video.vercel.app/'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            {/*<a target='blank'  rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
+                            <a target='blank'  rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>*/}
+                            </a>
                             <div>
                                 <div className={`${videoPlayer ? 'info' : 'noShow'}`}>
                                     <p className='text'>{english ? 
@@ -59,13 +58,13 @@ const Work = ({english}) => {
                                 <button  onClick={() => setVideoPlayer(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </CardHover>
+                </Card>
 
-            <div style={{backgroundImage: `url(${hw})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+            <Card style={{backgroundImage: `url(${hw})`}} className='group'>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className=' text-2xl font-bold text-white tracking-wider'>
                             English practice app
                         </span>
@@ -86,13 +85,13 @@ const Work = ({english}) => {
                                 <button  onClick={() => setEngilshPractice(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>                           
                         </div>
-                    </div>
-            </div>
+                    </CardHover>
+            </Card>
 
-            <div style={{backgroundImage: `url(${cricket})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+            <Card style={{backgroundImage: `url(${cricket})`}} className='group'>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             Drinking Game app
                         </span>
@@ -112,12 +111,12 @@ const Work = ({english}) => {
                                 <button  onClick={() => setCricketInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${chores})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    </CardHover>
+                </Card>
+                <Card style={{backgroundImage: `url(${chores})`}} className='group'>
                     
                     {/* Hover Effects */}
-                <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                <CardHover className='group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             House Chores app
                         </span>
@@ -138,23 +137,23 @@ const Work = ({english}) => {
                                 <button  onClick={() => setChoresInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>    
+                    </CardHover>
+                </Card>
+            </Content>    
 
-            <div className='pt-8'>
-                <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>{`${english ? 'TUTORIAL PROJECTS' : 'PROJETOS TUTORIAIS'}`}</p>
-                <p className='py-6'>{`${english ? 'Projects made from tutorials in order to improve my skills.' : 'Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.'}`}</p>
-            </div>
+            <Wrapper>
+                <Title>{`${english ? 'TUTORIAL PROJECTS' : 'PROJETOS TUTORIAIS'}`}</Title>
+                <SubTitle>{`${english ? 'Projects made from tutorials in order to improve my skills.' : 'Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.'}`}</SubTitle>
+            </Wrapper>
 
             {/* container */}
             <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
                 
                 {/* Grid item */}
-                <div style={{backgroundImage: `url(${tikima})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <Card style={{backgroundImage: `url(${tikima})`}} className='group'>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             Tik Tok Clone App
                         </span>
@@ -175,12 +174,12 @@ const Work = ({english}) => {
                                 <button  onClick={() => setTikTok(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${ecommerce})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    </CardHover>
+                </Card>
+                <Card style={{backgroundImage: `url(${ecommerce})`}} className='group'>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             E-commerce App
                         </span>
@@ -201,13 +200,13 @@ const Work = ({english}) => {
                                 <button  onClick={() => setEcommerceInfo(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </CardHover>
+                </Card>
                 
-                <div style={{backgroundImage: `url(${pablot})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <Card style={{backgroundImage: `url(${pablot})`}} className='group'>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                            My Comercial Website
                         </span>
@@ -228,12 +227,12 @@ const Work = ({english}) => {
                                 <button  onClick={() => setInglesComPablot(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage: `url(${music})`}} className='relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    </CardHover>
+                </Card>
+                <Card style={{backgroundImage: `url(${music})`}} className='group'>
                     
                     {/* Hover Effects */}
-                    <div className='flex items-center justify-center flex-col opacity-0 group-hover:opacity-100'>
+                    <CardHover className='group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             Music Player App 
                         </span>
@@ -254,11 +253,11 @@ const Work = ({english}) => {
                                 <button  onClick={() => setSpotify(true)} className='close text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>+Info</button>
                             </div>
                         </div>
-                    </div>
-                </div>            
+                    </CardHover>
+                </Card>            
             </div>        
-        </div>
-    </div>
+        </SubContainer>
+    </Container>
   )
 }
 

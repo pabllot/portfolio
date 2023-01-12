@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-scroll'
-import ReactImg from '../assets/test.png';
+import ReactImg from '../../assets/test.png';
 
 
 

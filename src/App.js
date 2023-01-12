@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import About from './components/About';
-import Contact from './components/Contact';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Skills from './components/Skills';
-import Work from './components/Work';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Home from './components/Home/Home';
+import Navbar from './components/Navbar/Navbar';
+import Skills from './components/Skills/Skills';
+import Work from './components/Work/Work';
 
 function App() {
   const [english, setEnglish] = useState(false)
