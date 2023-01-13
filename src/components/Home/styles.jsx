@@ -58,21 +58,22 @@ export const Paragraph = styled.p`
 `
 
 export const H1 = styled.h1`
-    font-size: 1.25rem;
+    font-size: 3rem;
     line-height: 2.5rem;
     font-weight: 700;
     color: rgb(204 214 246);
-
+    
     @media only screen and (max-width: 768px) {margin-left: 5px;}
     
-    @media (min-width: 640px) {
+    @media (max-width: 640px) {
         font-size: 4.5rem;
+        font-weight: 700;
         line-height: 1;
         margin-left: 12px;    
     }
 `
 export const H2 = styled.h2`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 1.5;
     font-weight: 700;
     color: rgb(136 146 176);
