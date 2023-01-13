@@ -5,18 +5,19 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Skills from './components/Skills/Skills';
 import Work from './components/Work/Work';
+import { Container } from './styles';
 
 function App() {
   const [english, setEnglish] = useState(false)
   return (
-    <div className='bg-[#0a192f] text-xl font-bold'>
+    <Container>
       <Navbar english={english} setEnglish={setEnglish} />
       <Home english={english} setEnglish={setEnglish} />
       <Skills english={english} setEnglish={setEnglish} />
       <Work english={english} setEnglish={setEnglish} />
       <About english={english} setEnglish={setEnglish} />
       <Contact english={english} setEnglish={setEnglish} />
-    </div>
+    </Container>
   );
 }
 

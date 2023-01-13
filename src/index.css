@@ -14,17 +14,3 @@
     }
 }
 
-.content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-}
-
-.content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(23, 44, 75, 1),
-        hsla(242, 52%, 33%, 1)
-    )!important;
-}
