@@ -1,5 +1,4 @@
-import React from 'react';
-
+import { Container, Image, Paragraph, Skill, SkillsContainer, SubContainer, SubTitle, Title, TitleWrapper } from './styles';
 import HTML from '../../assets/html.png';
 import CSS from '../../assets/css.png';
 import JavaScript from '../../assets/javascript.png';
@@ -9,54 +8,51 @@ import GitHub from '../../assets/github.png';
 import Styled from '../../assets/styled-components.png';
 import Typescript from '../../assets/typescript.svg';
 
-import '../styles.css'
-
 const Skills = ({english}) => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300 py-4'>
-        {/* container */}
-        <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-            <div>
-                <p className='text-4xl font-bold inline border-b-4 border-pink-600'>{`${english ? 'Skills' : 'Habiidades'}`}</p>
-                <p className='py-4'>{`${english ? 'These are some of the technologies I use the most in my projects.' : 'Essas são as tecnologias que tenho usado em meus projetos'}`}</p>
-            </div>
+    <Container name='skills'>
+        <SubContainer>
+            <TitleWrapper>
+                <Title>{`${english ? 'Skills' : 'Habiidades'}`}</Title>
+                <SubTitle>{`${english ? 'These are some of the technologies I use the most in my projects.' : 'Essas são as tecnologias que tenho usado em meus projetos'}`}</SubTitle>
+            </TitleWrapper>
 
-            <div className=' w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                <div className='icon p-4 shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={HTML} alt='html icon'/>
-                   <p className='my-4'>HTML</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={CSS} alt='html icon'/>
-                   <p className='my-4'>CSS</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={JavaScript} alt='html icon'/>
-                   <p className='my-4'>JavaScript</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={Typescript} alt='html icon'/>
-                   <p className='my-4'>Typescript</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={ReactImg} alt='html icon'/>
-                   <p className='my-4'>React</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={Styled} alt='html icon'/>
-                   <p className='my-4 text-1xl'>Styled-components</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={Node} alt='html icon'/>
-                   <p className='my-4'>Node</p>
-                </div>
-                <div className='icon shadow-md shadow-[#040c16]'>
-                   <img className='w-20 mx-auto' src={GitHub} alt='html icon'/>
-                   <p className='my-4'>Github</p>
-                </div>
-            </div>
-        </div>
-    </div>
+            <SkillsContainer>
+                <Skill>
+                   <Image src={HTML} alt='html icon'/>
+                   <Paragraph>HTML</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={CSS} alt='html icon'/>
+                   <Paragraph>CSS</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={JavaScript} alt='html icon'/>
+                   <Paragraph>JavaScript</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={Typescript} alt='html icon'/>
+                   <Paragraph>Typescript</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={ReactImg} alt='html icon'/>
+                   <Paragraph>React</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={Styled} alt='html icon'/>
+                   <Paragraph className='my-4 text-1xl'>Styled-components</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={Node} alt='html icon'/>
+                   <Paragraph>Node</Paragraph>
+                </Skill>
+                <Skill>
+                   <Image src={GitHub} alt='html icon'/>
+                   <Paragraph>Github</Paragraph>
+                </Skill>
+            </SkillsContainer>
+        </SubContainer>
+    </Container>
   )
 }
 
