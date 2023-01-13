@@ -28,8 +28,8 @@ export const Image = styled.img`
 
     @media only screen and (max-width: 640px) {  
         width: 6rem;
-        top: 3.6rem;
-        left: 9rem;
+        top: 4.6rem;
+        left: 9.2rem;
         opacity: 0.9;
     }
     @media only screen and (max-width: 400px) {  
@@ -76,7 +76,7 @@ export const H1 = styled.h1`
     @media only screen and (max-width: 768px) {margin-left: 5px;}
     
     @media (max-width: 640px) {
-        font-size: 4.5rem;
+        font-size: 2.5rem;
         font-weight: 700;
         line-height: 1;
         margin-left: 12px;    
@@ -95,7 +95,7 @@ export const H2 = styled.h2`
     color: rgb(136 146 176);
 
     @media (max-width: 768px) {margin-left: 5px; font-size: 23px; }
-    @media (max-width: 640px) {font-size: 2.5rem; line-height: 1; margin-left: 12px; }
+    @media (max-width: 640px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
     @media (max-width: 400px) {font-size: 1.5rem; line-height: 1; margin-left: 12px; }
 `
 
