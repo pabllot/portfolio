@@ -1,103 +1,101 @@
 import React, {useState} from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import Logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png'
 import { Link } from 'react-scroll'
+import { Container, LogoContainer, Logo, ListLargeScreen, Li, HamburgerIcon, ListHamburguer, LiHamburguer, SocialMediaContainer, Linkedin, Github, Instagram, UL, A } from './styles'
 
 const Navbar = ({english}) => {
     const [hamburguer, setHamburguer] = useState(false)
     const handleClick = () => setHamburguer(prev => !prev)
 
   return (
-    <div className='fixed z-50 w-screen h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-        <div>
-            <img src={Logo} alt='Logo' style={{width: '50px'}}/>
-        </div>
-
-        {/* menu */}
+    <Container>
+        <LogoContainer>
+            <Logo src={logo} alt='Logo'/>
+        </LogoContainer>
     
-        <ul className='hidden md:flex'>
-            <li>
+        <ListLargeScreen>
+            <Li>
                 <Link to='home' smooth={true} duration={500}>
                     {`${english ? 'Home' : 'Home'}`}
                 </Link>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <Link to='skills' smooth={true} duration={500}>
                 {`${english ? 'Skills' : 'Habilidades'}`}
                 </Link>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <Link to='work' smooth={true} duration={500}>
                 {`${english ? 'Work' : 'Projetos'}`}
                 </Link>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <Link to='about' smooth={true} duration={500}>
                 {`${english ? 'About' : 'Sobre'}`}
                 </Link>
-            </li>
-            <li>
+            </Li>
+            <Li>
                 <Link to='contact' smooth={true} duration={500}>
                 {`${english ? 'Contact' : 'Contato'}`}
                 </Link>
-            </li>
+            </Li>
             
-        </ul>
+        </ListLargeScreen>
 
-        {/* Hamburguer */}
-        <div onClick={handleClick} className='md:hidden z-20'>
+        <HamburgerIcon onClick={handleClick}>
             { hamburguer ? <FaTimes /> : <FaBars /> }
-        </div>
-        {/* mobile menu */}
-        <ul className={hamburguer ? 'absolute z-10 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center' : 'hidden'}>
-            <li className='py-2 text-4xl'>
+        </HamburgerIcon>
+
+        <ListHamburguer hamburguer={hamburguer}>
+            <LiHamburguer>
                 <Link onClick={handleClick} to='home' smooth={true} duration={500}>
                     Home
                 </Link>
-            </li>
-            <li className='py-2 text-4xl'>
+            </LiHamburguer>
+            <LiHamburguer>
                 <Link onClick={handleClick} to='about' smooth={true} duration={500}>
                     About
                 </Link>
-            </li>
-            <li className='py-2 text-4xl'>
+            </LiHamburguer>
+            <LiHamburguer>
                 <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
                     Skills
                 </Link>
-            </li>
-            <li className='py-2 text-4xl'>
+            </LiHamburguer>
+            <LiHamburguer>
                 <Link onClick={handleClick} to='work' smooth={true} duration={500}>
                     Work
                 </Link>
-            </li>
-            <li className='py-2 text-4xl'>
+            </LiHamburguer>
+            <LiHamburguer>
                 <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
                     Contact
                 </Link>
-            </li>
-        </ul>
-        {/* social icons */}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-            <ul>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/pablo-teixeira-466497238/'>
+            </LiHamburguer>
+        </ListHamburguer>
+
+        <SocialMediaContainer>
+            <UL>
+                <Linkedin>
+                    <A target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/pablo-teixeira-466497238/'>
                         Linkedin <FaLinkedin size={30}/>
-                    </a>
-                </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-600'>
-                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' rel="noreferrer" href='https://github.com/pabllot'>
+                    </A>
+                </Linkedin>
+                <Github>
+                    <A target='_blank' rel="noreferrer" href='https://github.com/pabllot'>
                         Github <FaGithub size={30}/>
-                    </a>
-                </li>
-                <li className='w-[180px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-10px] duration-300 bg-yellow-600'>
-                    <a className='flex justify-between items-center w-full text-gray-300' target='_blank' rel="noreferrer" href='https://www.instagram.com/inglescompablot/'>
+                    </A>
+                </Github>
+                <Instagram>
+                    <A target='_blank' rel="noreferrer" href='https://www.instagram.com/inglescompablot/'>
                         Instagram <FaInstagram size={30}/>
-                    </a>
-                </li>
+                    </A>
+                </Instagram>
               
-            </ul>
-        </div>
-    </div>
+            </UL>
+        </SocialMediaContainer>
+    </Container>
   )
 }
 
