@@ -1,74 +1,4 @@
 
-.react {
-    position: absolute;
-    width: 29rem;
-    z-index: 1;
-    top: 12rem;
-    right: 6rem;
-    opacity: 0.3;
-    transition: .3s ease-in-out;      
-}
-
-
-.react:hover {
-    opacity: 1;
-}
-
-.html {
-    position: absolute;
-    width: 7rem;
-    z-index: 1;
-    top: 37rem;
-    left: 16rem;
-    opacity: 0.5;
-    transition: .3s ease-in-out;      
-}
-
-.html:hover {
-    opacity: 1;
-}
-
-.css {
-    position: absolute;
-    width: 7rem;
-    z-index: 1;
-    top: 37rem;
-    left: 24rem;
-    opacity: 0.5;
-    transition: .3s ease-in-out;      
-}
-
-.css:hover {
-    opacity: 1;
-}
-
-.js {
-    position: absolute;
-    width: 7rem;
-    z-index: 1;
-    top: 37rem;
-    left: 32rem;
-    opacity: 0.5;
-    transition: .3s ease-in-out;      
-}
-
-.js:hover {
-    opacity: 1;
-}
-
-.ts {
-    position: absolute;
-    width: 7rem;
-    z-index: 1;
-    top: 37rem;
-    left: 40.5rem;
-    opacity: 0.5;
-    transition: .3s ease-in-out;      
-}
-
-.ts:hover {
-    opacity: 1;
-}
 
 
 .wrapper {
@@ -101,26 +31,6 @@
     height: 100%;
     padding: 18px;
     font-size: 17px;
-}
-
-.lang-wrapper {
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-}
-
-.lang {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background-color: antiquewhite;
-    height: 40px;
-    width: 140px;
-    border-radius: 10px;
-    color: rgb(20, 20, 152);
 }
 
 .icon {
@@ -167,32 +77,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .homep {
-        font-size: 15px;
-        margin-left: 5px;
-    }
-    
-    .homeh1 {
-        margin-left: 5px;
-    }
-    
-    .homeh2 {
-        margin-left: 5px;
-        font-size: 23px;
-    }
-    .react {
-        width: 6rem;
-        top: 6rem;
-        left: 40%;
-        opacity: 0.8;
-    }
-
-
-
-    .btnm {
-        font-size: 14px;    
-        padding: 2px 8px;
-    }
+   
 
     .info {
         width: 48vw;
@@ -202,48 +87,13 @@
         font-size: 15px;
     }
 
-    .aligning {
-        align-items: center;
-        padding-top: 1rem;
-    }
+ 
 
-    .lang-wrapper{
-        justify-content: center;
-        margin-top: 7rem;
-
-    }
   }
 
   @media only screen and (max-width: 640px) {
 
-    .homep {
-        margin-left: 12px;
-    }
-    .homeh1 {
-        margin-left: 12px;
-    }
-    .homeh2 {
-        margin-left: 12px;
-    }
-
-
-    .react {
-        width: 6rem;
-        top: 6.6rem;
-        left: 9rem;
-        opacity: 0.9;
-
-    }
-
-    .aligning {
-        align-items: center;
-        padding-top: 1rem;
-    }
-
-    .btnm {
-        font-size: 14px;    
-        padding: 2px 8px;
-    }
+ 
 
     .info {
         width: 90vw;
@@ -259,11 +109,7 @@
         font-size: 14px;
     }
 
-    .lang-wrapper{
-        justify-content: center;
-        margin-top: 7rem;
 
-    }
 
    
 
