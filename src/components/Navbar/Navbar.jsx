@@ -55,22 +55,22 @@ const Navbar = ({english}) => {
             </LiHamburguer>
             <LiHamburguer>
                 <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-                    About
+                {`${english ? 'About' : 'Sobre'}`}
                 </Link>
             </LiHamburguer>
             <LiHamburguer>
                 <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-                    Skills
+                {`${english ? 'Skills' : 'Habilidades'}`}
                 </Link>
             </LiHamburguer>
             <LiHamburguer>
                 <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-                    Work
+                {`${english ? 'Work' : 'Projetos'}`}
                 </Link>
             </LiHamburguer>
             <LiHamburguer>
                 <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-                    Contact
+                {`${english ? 'Contact' : 'Contato'}`}
                 </Link>
             </LiHamburguer>
         </ListHamburguer>
