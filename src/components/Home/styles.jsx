@@ -21,15 +21,21 @@ export const Image = styled.img`
 
     @media only screen and (max-width: 768px) {
         width: 6rem;
-        top: 6rem;
+        top: 5rem;
         left: 40%;
         opacity: 0.8;
     }
 
     @media only screen and (max-width: 640px) {  
         width: 6rem;
-        top: 6.6rem;
+        top: 3.6rem;
         left: 9rem;
+        opacity: 0.9;
+    }
+    @media only screen and (max-width: 400px) {  
+        width: 6rem;
+        top: 4.6rem;
+        left: 7.5rem;
         opacity: 0.9;
     }
 `
@@ -55,6 +61,10 @@ export const Paragraph = styled.p`
     color: rgb(219 39 119);
     @media only screen and (max-width: 768px) { font-size: 15px; margin-left: 5px;}
     @media only screen and (max-width: 640px) {margin-left: 12px;}
+    @media only screen and (max-width: 400px) {
+        margin-left: 12px;
+        font-size: 12px;
+        }
 `
 
 export const H1 = styled.h1`
@@ -71,6 +81,12 @@ export const H1 = styled.h1`
         line-height: 1;
         margin-left: 12px;    
     }
+    @media (max-width: 400px) {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-left: 12px;    
+    }
 `
 export const H2 = styled.h2`
     font-size: 2.2rem;
@@ -80,6 +96,7 @@ export const H2 = styled.h2`
 
     @media (max-width: 768px) {margin-left: 5px; font-size: 23px; }
     @media (max-width: 640px) {font-size: 2.5rem; line-height: 1; margin-left: 12px; }
+    @media (max-width: 400px) {font-size: 1.5rem; line-height: 1; margin-left: 12px; }
 `
 
 export const Button = styled.button`
