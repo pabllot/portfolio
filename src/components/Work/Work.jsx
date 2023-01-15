@@ -24,36 +24,11 @@ const Work = ({english}) => {
                     {`${english ? 'Original Projects' : 'Projetos Originais'}`}
                 </Title>
                 <SubTitle>
-                    {`${english ? "That's a special section where I put some of the projects I made from scratch" 
+                    {`${english ? "That's a special section where I put some of the projects I made from scratch." 
                     : 'Essa é uma seção especial onde coloco meus projetos originais favoritos.'}`}
                 </SubTitle>
             </Wrapper>
             <Content>
-                <Card className='group' style={{backgroundImage: `url(${video})`}}>                    
-                    <CardHover className='group-hover:opacity-100'>
-                        <Span>
-                           Video Player app
-                        </Span>
-                        <ButtonContainer>
-                            <Href target='blank' rel="noreferrer" href='https://next-desafio-video.vercel.app/'>
-                                <Button>Site</Button>
-                            </Href>
-                            <Href target='blank'  rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
-                                <Button>Code</Button>
-                            </Href>
-                            <InfoContainer>
-                                <div className={`${videoPlayer ? 'info' : 'noShow'}`}>
-                                    <Paragraph>{english ? 
-                                    "That's my favorite project so far. I've developed it by myself in order to apply for a frontend position, I've learned so much from it. It's a video player app full of functionalities specified by the client." : 
-                                    'Esse é o meu projeto favorito até agora. Eu o desenvolvi sozinho para aplicar a uma posição de front-end, aprendi muito com isso. É um aplicativo de player de vídeo cheio de funcionalidades especificadas pelo cliente.'}</Paragraph>
-                                    <ButtonClose onClick={() => setVideoPlayer(false)} ><AiFillCloseCircle /></ButtonClose>
-                                </div>
-                                <Button onClick={() => setVideoPlayer(true)}>+Info</Button>
-                            </InfoContainer>
-                        </ButtonContainer>
-                            <Techs>NextJS | ReactJS | Styled-Components</Techs>
-                    </CardHover>
-                </Card>
 
             <Card style={{backgroundImage: `url(${hw})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
@@ -80,6 +55,32 @@ const Work = ({english}) => {
                         <Techs>ReactJS | Styled-Components | React-Router-Dom</Techs>
                     </CardHover>
             </Card>
+
+                <Card className='group' style={{backgroundImage: `url(${video})`}}>                    
+                    <CardHover className='group-hover:opacity-100'>
+                        <Span>
+                           Video Player app
+                        </Span>
+                        <ButtonContainer>
+                            <Href target='blank' rel="noreferrer" href='https://next-desafio-video.vercel.app/'>
+                                <Button>Site</Button>
+                            </Href>
+                            <Href target='blank'  rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
+                                <Button>Code</Button>
+                            </Href>
+                            <InfoContainer>
+                                <div className={`${videoPlayer ? 'info' : 'noShow'}`}>
+                                    <Paragraph>{english ? 
+                                    "That's my favorite project so far. I've developed it by myself in order to apply for a frontend position, I've learned so much from it. It's a video player app full of functionalities specified by the client." : 
+                                    'Esse é o meu projeto favorito até agora. Eu o desenvolvi sozinho para aplicar a uma posição de front-end, aprendi muito com isso. É um aplicativo de player de vídeo cheio de funcionalidades especificadas pelo cliente.'}</Paragraph>
+                                    <ButtonClose onClick={() => setVideoPlayer(false)} ><AiFillCloseCircle /></ButtonClose>
+                                </div>
+                                <Button onClick={() => setVideoPlayer(true)}>+Info</Button>
+                            </InfoContainer>
+                        </ButtonContainer>
+                            <Techs>NextJS | ReactJS | Styled-Components</Techs>
+                    </CardHover>
+                </Card>
             </Content>    
 
             <Wrapper style={{marginTop: '10rem'}}>
