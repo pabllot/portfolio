@@ -153,14 +153,24 @@ export const Button = styled.button`
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.75rem;
+    @media (max-width: 450px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 50px;
+        font-size: 0.8rem;
+    }
+
 `
 
 export const Href = styled.a``
 
 export const Techs = styled.p`
     font-size: 1rem;
-
+    
     @media (max-width: 350px) {
+    max-width: 80%;
     font-size: .7rem;}
 `
 

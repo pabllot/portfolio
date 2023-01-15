@@ -52,7 +52,7 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setEngilshPractice(true)}>+Info</Button>
                             </InfoContainer>                           
                         </ButtonContainer>
-                        <Techs>ReactJS | Styled-Components | React-Router-Dom</Techs>
+                        <Techs>ReactJS | React-Router-Dom | Styled-Components </Techs>
                     </CardHover>
             </Card>
 
@@ -145,7 +145,7 @@ const Work = ({english}) => {
                 <Card style={{backgroundImage: `url(${tikima})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
-                            Tik Tok Clone App
+                            Tik Tok Clone
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://tikima.vercel.app/'>
