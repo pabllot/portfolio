@@ -8,7 +8,7 @@ const Home = ({english, setEnglish}) => {
   return (
     <Container name='home'>      
         <Wrapper>
-            <Paragraph>{` ${english ? 'Welcome to my portfolio.' : 'Bem vindo ao meu portifólio'}`}</Paragraph>
+            <Paragraph>{` ${english ? 'Welcome to my portfolio' : 'Bem vindo ao meu portifólio'}`}</Paragraph>
             <H1>Pablo Teixeira</H1>
             <H2>{`${english ? "I'm a Front-End Developer" : 'Desenvolvedor Front-End'}`}</H2>            
             <LanguageContainer>

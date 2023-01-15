@@ -40,7 +40,7 @@ const Skills = ({english}) => {
                 </Skill>
                 <Skill>
                    <Image src={Styled} alt='html icon'/>
-                   <Paragraph className='my-4 text-1xl'>Styled-components</Paragraph>
+                   <Paragraph>Styled-components</Paragraph>
                 </Skill>
                 <Skill>
                    <Image src={Node} alt='html icon'/>

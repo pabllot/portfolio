@@ -53,6 +53,12 @@ export const SkillsContainer = styled.div`
 
 export const Skill = styled.div`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 10rem;
     padding: 1rem;
 
 &:before{
@@ -84,7 +90,7 @@ export const Skill = styled.div`
 
 &:hover:after,
 &:hover:before {
-    border-color: #dcd9d9;
+    border-color: rgb(219 39 119);
     width: 100%;
     height: 100%;
 }
@@ -103,6 +109,5 @@ export const Image = styled.img`
 `
 
 export const Paragraph = styled.p`
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: .8rem;
 `
