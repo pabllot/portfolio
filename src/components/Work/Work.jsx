@@ -25,7 +25,7 @@ const Work = ({english}) => {
         <SubContainer>
             <Wrapper>
                 <Title>
-                    {`${english ? 'ORIGINAL PROJECTS' : 'PROJETOS ORIGINAIS'}`}
+                    {`${english ? 'Original Projects' : 'Projetos Originais'}`}
                 </Title>
                 <SubTitle>
                     {`${english ? "That's a special section where I put some of the projects I made from scratch" 
@@ -134,7 +134,7 @@ const Work = ({english}) => {
             </Content>    
 
             <Wrapper>
-                <Title>{`${english ? 'TUTORIAL PROJECTS' : 'PROJETOS TUTORIAIS'}`}</Title>
+                <Title>{`${english ? 'Tutorial Projects' : 'Projetos Tutoriais'}`}</Title>
                 <SubTitle>{`${english ? 'Projects made from tutorials in order to improve my skills.' : 'Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.'}`}</SubTitle>
             </Wrapper>
 

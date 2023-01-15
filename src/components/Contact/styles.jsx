@@ -29,28 +29,39 @@ font-size: 2.25rem/* 36px */;
     border-bottom-width: 4px;
     border-color: rgb(219 39 119);
     color: rgb(209 213 219);
+
+    @media (max-width: 400px) {   font-size: 1.4rem}
 `
 
 export const Paragraph = styled.p`
     color: rgb(209 213 219);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    @media (max-width: 400px) { 
+        font-size: .95rem;}
 `
 
 export const NameInput = styled.input`
     background-color: rgb(204 214 246);
     padding: 0.5rem;
+
+    @media (max-width: 400px) { 
+        font-size: .95rem;}
 `
 export const EmailInput = styled.input`
     background-color: rgb(204 214 246);
     padding: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    @media (max-width: 400px) { 
+        font-size: .95rem;}
 `
 
 export const TextArea = styled.textarea`
     background-color: rgb(204 214 246);
     padding: 0.5rem;
+    @media (max-width: 400px) { 
+        font-size: .95rem;}
 `
 
 export const Button = styled.button`
@@ -66,6 +77,8 @@ export const Button = styled.button`
     margin-right: auto;
     display: flex;
     align-items: center; 
+    @media (max-width: 400px) { 
+        font-size: .95rem;}
 
     &:hover {
         border-color: rgb(219 39 119);

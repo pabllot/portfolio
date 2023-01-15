@@ -11,7 +11,7 @@ const About = ({english}) => {
             </Wrapper>
             <Wrapper>                    
                 <TextBox>
-                    <Paragraph>{`${english ? "I'm 25 years old, an easy-going person, passionate about programming and eager to learn more and more every day. Former online English teacher, still teach some private students to have some extra money by the end of the month, alongside with frontend freelances." : 'Tenho 25 anos, uma pessoa descontraída, apaixonada por programação e com vontade de aprender cada dia mais. Ex-professor de inglês online, ainda ensino alguns alunos particulares para ter uma grana extra no final do mês, junto com freelances de frontend.'}`}</Paragraph>
+                    <Paragraph>{`${english ? "Hey there, my name is Pablo, I'm 25 years old. A frontend software developer and a series binge-watcher on my free time. Foccused and commited professional always aiming to achieve goals set and help my team." : 'Meu nome é Pablo Teixeira, tenho 25 anos. Sou um desenvolvedor frontend e maratonador de série nas horas vagas. Profissional dedicado e determinado a sempre atingir os objetivos propostos e ajudar sua equipe.'}`}</Paragraph>
                 </TextBox>
             </Wrapper>
         </SubContainer>

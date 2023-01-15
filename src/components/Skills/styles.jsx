@@ -29,12 +29,15 @@ export const Title = styled.p`
     font-weight: 700;
     display: inline;
     border-bottom-width: 4px;
-    border-color: rgb(219 39 119);    
+    border-color: rgb(219 39 119);  
+    @media (max-width: 400px) {   font-size: 1.4rem/* 30px */;}  
 `
 
 export const SubTitle = styled.p`
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem;   
+    @media (max-width: 400px) { 
+        font-size: .95rem;}
 `
 
 export const SkillsContainer = styled.div`

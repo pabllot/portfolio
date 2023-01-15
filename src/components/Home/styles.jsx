@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(10 25 47);
 
 `
@@ -59,8 +62,10 @@ export const ButtonContainer = styled.div``
 
 export const Paragraph = styled.p`
     color: rgb(219 39 119);
+    font-size: 1.3rem;
+    line-height: 2.6rem;
     @media only screen and (max-width: 768px) { font-size: 15px; margin-left: 5px;}
-    @media only screen and (max-width: 640px) {margin-left: 12px;}
+    @media only screen and (max-width: 640px) {margin-left: 12px; line-height: 1rem;}
     @media only screen and (max-width: 400px) {
         margin-left: 12px;
         font-size: 12px;
@@ -82,9 +87,9 @@ export const H1 = styled.h1`
         margin-left: 12px;    
     }
     @media (max-width: 400px) {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 700;
-        line-height: 1;
+        line-height: 1.2;
         margin-left: 12px;    
     }
 `
@@ -96,7 +101,7 @@ export const H2 = styled.h2`
 
     @media (max-width: 768px) {margin-left: 5px; font-size: 23px; }
     @media (max-width: 640px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
-    @media (max-width: 400px) {font-size: 1.5rem; line-height: 1; margin-left: 12px; }
+    @media (max-width: 400px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
 `
 
 export const Button = styled.button`
@@ -125,8 +130,8 @@ export const Button = styled.button`
         padding: 2px 8px;
     }
     @media (max-width: 640px) { 
-        font-size: 14px;    
-        padding: 2px 8px;
+        font-size: 13px;    
+        padding: 0px 4px;
     }
 `
 
@@ -156,7 +161,13 @@ export const Language = styled.div`
     background-color: antiquewhite;
     height: 40px;
     width: 140px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: rgb(20, 20, 152);
+
+    @media (max-width: 640px) { 
+        height: 23px;
+        width: 100px;
+        font-size: 14px;
+    }
 
 `

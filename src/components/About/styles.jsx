@@ -27,7 +27,14 @@ justify-content: center;
 `
 
 export const TextBox = styled.div`width: 600px;`
-export const Paragraph = styled.p``
+
+export const Paragraph = styled.p`
+    @media only screen and (max-width: 400px) {
+        font-size: .95rem;
+        padding: 0 1rem ;
+    }
+
+`
 
 export const Title = styled.p`
 font-size: 2.25rem/* 36px */;
@@ -36,5 +43,8 @@ font-weight: 700;
 display: inline;
 border-bottom-width: 4px;
 border-color: rgb(219 39 119);
+
+@media (max-width: 400px) {   font-size: 1.4rem}
+
 `
 

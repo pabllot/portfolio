@@ -50,10 +50,21 @@ export const Title = styled.p`
     border-bottom-width: 4px;
     border-bottom-color: #c929b9;
     color: rgb(209 213 219);
+
+    @media (max-width: 400px) {   font-size: 1.4rem/* 30px */;
+};
+
 `
 
-export const SubTitle = styled.p`padding-top: 1.5rem/* 24px */;
-padding-bottom: 1.5rem;`
+export const SubTitle = styled.p`
+    padding-top: 1.5rem/* 24px */;
+    padding-bottom: 1.5rem;
+    @media (max-width: 400px) { 
+        font-size: .95rem;
+        padding-top: .5rem/* 24px */;
+        padding-bottom: .5rem;
+    }
+`
 
 export const Content = styled.div`
     display: grid;
@@ -61,6 +72,7 @@ export const Content = styled.div`
 
     @media (min-width: 640px) {grid-template-columns: repeat(2, minmax(0, 1fr))};
     @media (min-width: 768px) {grid-template-columns: repeat(2, minmax(0, 1fr));}
+
 `
 
 export const Card = styled.div`

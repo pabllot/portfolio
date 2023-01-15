@@ -49,8 +49,9 @@ align-items: center;
 export const LiHamburguer = styled.li`
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 2.5rem;
+    border-bottom: 1px solid gray;
 `
 
 export const SocialMediaContainer = styled.div`

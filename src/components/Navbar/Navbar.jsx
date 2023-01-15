@@ -27,7 +27,7 @@ const Navbar = ({english}) => {
             </Li>
             <Li>
                 <Link to='work' smooth={true} duration={500}>
-                {`${english ? 'Work' : 'Projetos'}`}
+                {`${english ? 'Projects' : 'Projetos'}`}
                 </Link>
             </Li>
             <Li>
@@ -65,7 +65,7 @@ const Navbar = ({english}) => {
             </LiHamburguer>
             <LiHamburguer>
                 <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-                {`${english ? 'Work' : 'Projetos'}`}
+                {`${english ? 'Projects' : 'Projetos'}`}
                 </Link>
             </LiHamburguer>
             <LiHamburguer>
