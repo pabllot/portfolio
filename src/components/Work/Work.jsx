@@ -1,4 +1,4 @@
-import { Button, ButtonClose, ButtonContainer, Card, CardHover, Container, Content, Href, InfoContainer, Paragraph, Span, SubContainer, SubTitle, Techs, Title, Wrapper } from './styles'
+import { Button, ButtonClose, ButtonContainer, Card, CardHover, Container, Content, Href, InfoContainer, Paragraph, Span, SubContainer, SubTitle, TechContainer, Techs, Title, Wrapper } from './styles'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { useState } from 'react'
 import tikima from '../../assets/tikima.png'
@@ -52,7 +52,9 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setEngilshPractice(true)}>+Info</Button>
                             </InfoContainer>                           
                         </ButtonContainer>
-                        <Techs>ReactJS | React-Router-Dom | Styled-Components </Techs>
+                        <TechContainer>
+                            <Techs>ReactJS | Styled-Components | React Router Dom</Techs>
+                        </TechContainer>
                     </CardHover>
             </Card>
 
