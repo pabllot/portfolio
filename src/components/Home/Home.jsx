@@ -2,8 +2,8 @@ import React from 'react'
 import { Container, H1, H2, Language, LanguageContainer, Paragraph, Wrapper } from './styles';
 
 const Home = ({english, setEnglish}) => {
-  let shadowEnglish = english ? '0 1px 7px blue' : ''
-  let shadowPortuguese = !english ? '0 1px 7px blue' : ''
+  let shadowEnglish = english ? '0px 2px 7px #2C74B3' : ''
+  let shadowPortuguese = !english ? '0 2px 7px #2C74B3' : ''
 
   return (
     <Container name='home'>      

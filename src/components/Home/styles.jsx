@@ -90,10 +90,11 @@ export const Language = styled.div`
     justify-content: center;
     cursor: pointer;
     background-color: antiquewhite;
-    height: 40px;
-    width: 140px;
+    height: 32px;
+    width: 105px;
     border-radius: 5px;
     color: rgb(20, 20, 152);
+    font-size: 15px;
 
     @media (max-width: 640px) { 
         height: 23px;
