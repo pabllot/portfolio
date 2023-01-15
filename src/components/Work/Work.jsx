@@ -1,4 +1,4 @@
-import { Button, ButtonClose, ButtonContainer, Card, CardHover, Container, Content, Href, InfoContainer, Paragraph, Span, SubContainer, SubTitle, Title, Wrapper } from './styles'
+import { Button, ButtonClose, ButtonContainer, Card, CardHover, Container, Content, Href, InfoContainer, Paragraph, Span, SubContainer, SubTitle, Techs, Title, Wrapper } from './styles'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { useState } from 'react'
 import tikima from '../../assets/tikima.png'
@@ -40,7 +40,7 @@ const Work = ({english}) => {
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://next-desafio-video.vercel.app/'>
-                                <Button>Demo</Button>
+                                <Button>Site</Button>
                             </Href>
                             <Href target='blank'  rel="noreferrer" href='https://github.com/pabllot/next-desafio-video'>
                                 <Button>Code</Button>
@@ -55,6 +55,7 @@ const Work = ({english}) => {
                                 <Button onClick={() => setVideoPlayer(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
+                            <Techs>NextJS | ReactJS | Styled-Components</Techs>
                     </CardHover>
                 </Card>
 
@@ -65,7 +66,7 @@ const Work = ({english}) => {
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://inglescompabloth.vercel.app/'>
-                                <Button>Demo</Button>
+                                <Button>Site</Button>
                             </Href>
                             <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/homework/'>
                                 <Button>Code</Button>
@@ -80,6 +81,7 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setEngilshPractice(true)}>+Info</Button>
                             </InfoContainer>                           
                         </ButtonContainer>
+                        <Techs>ReactJS | Styled-Components | React-Router-Dom</Techs>
                     </CardHover>
             </Card>
             </Content>    
@@ -97,7 +99,7 @@ const Work = ({english}) => {
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://tikima.vercel.app/'>
-                                <Button>Demo</Button>
+                                <Button>Site</Button>
                             </Href>
                             <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/tikima'>
                                 <Button>Code</Button>
@@ -112,6 +114,7 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setTikTok(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
+                        <Techs>ReactJS | Typescript | Tailwind | JWT | Sanity | Zustand</Techs>
                     </CardHover>
                 </Card>
                 <Card style={{backgroundImage: `url(${ecommerce})`}} className='group'>
@@ -122,7 +125,7 @@ const Work = ({english}) => {
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://nike-ecommerce-pied.vercel.app/'>
-                                <Button>Demo</Button>
+                                <Button>Site</Button>
                             </Href>
                             <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/nike-ecommerce'>
                                 <Button>Code</Button>
@@ -137,6 +140,7 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setEcommerceInfo(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
+                        <Techs>NextJS | ReactJS | Stripe | Sanity | UseContext</Techs>
                     </CardHover>
                 </Card>
                 
@@ -147,7 +151,7 @@ const Work = ({english}) => {
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://pabllot.github.io/inglescompablot/'>
-                                <Button>Demo</Button>
+                                <Button>Site</Button>
                             </Href>
                             <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/inglescompablot'>
                                 <Button>Code</Button>
@@ -162,6 +166,8 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setInglesComPablot(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
+                        <Techs> HTML | CSS | Javascript</Techs>
+
                     </CardHover>
                 </Card>
 
@@ -172,7 +178,7 @@ const Work = ({english}) => {
                         </Span>
                         <ButtonContainer>
                             <Href target='blank' rel="noreferrer" href='https://spotifine.netlify.app/'>
-                                <Button>Demo</Button>
+                                <Button>Site</Button>
                             </Href>
                             <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/music-player'>
                                 <Button>Code</Button>
@@ -187,6 +193,7 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setSpotify(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
+                        <Techs> ReactJS | Redux | Tailwind </Techs>
                     </CardHover>
                 </Card>   
 

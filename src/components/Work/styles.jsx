@@ -112,6 +112,7 @@ export const Span = styled.span`
 
 export const ButtonContainer = styled.div`
     padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     text-align: center;
 `
@@ -151,4 +152,11 @@ export const Button = styled.button`
 `
 
 export const Href = styled.a``
+
+export const Techs = styled.p`
+    font-size: 1rem;
+
+    @media (max-width: 350px) {
+    font-size: .7rem;}
+`
 
