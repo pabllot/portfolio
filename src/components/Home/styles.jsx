@@ -9,39 +9,6 @@ export const Container = styled.div`
     background-color: rgb(10 25 47);
 
 `
-export const Image = styled.img`
-    position: absolute;
-    width: 29rem;
-    z-index: 1;
-    top: 12rem;
-    right: 6rem;
-    opacity: 0.3;
-    transition: .3s ease-in-out; 
-
-    &:hover {
-        opacity: 1;
-    }
-
-    @media only screen and (max-width: 768px) {
-        width: 6rem;
-        top: 5rem;
-        left: 40%;
-        opacity: 0.8;
-    }
-
-    @media only screen and (max-width: 640px) {  
-        width: 6rem;
-        top: 4.6rem;
-        left: 9.2rem;
-        opacity: 0.9;
-    }
-    @media only screen and (max-width: 400px) {  
-        width: 6rem;
-        top: 4.6rem;
-        left: 7.5rem;
-        opacity: 0.9;
-    }
-`
 
 export const Wrapper = styled.div`
     max-width: 1000px;
@@ -57,8 +24,6 @@ export const Wrapper = styled.div`
     @media only screen and (max-width: 768px) {align-items: center; padding-top: 1rem;}
     @media only screen and (max-width: 640px) {align-items: center; padding-top: 1rem;}
 `
-
-export const ButtonContainer = styled.div``
 
 export const Paragraph = styled.p`
     color: rgb(219 39 119);
@@ -102,37 +67,6 @@ export const H2 = styled.h2`
     @media (max-width: 768px) {margin-left: 5px; font-size: 23px; }
     @media (max-width: 640px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
     @media (max-width: 400px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
-`
-
-export const Button = styled.button`
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 14px;   
-    line-height: 2rem; 
-    padding: 2px 8px;
-    border-width: 2px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
- 
-
-    &:hover{
-        background-color: rgb(219 39 119);
-        border-color: rgb(219 39 119);
-    }
-
-    @media  (max-width: 768px) { 
-        font-size: 14px;    
-        padding: 2px 8px;
-    }
-    @media (max-width: 640px) { 
-        font-size: 13px;    
-        padding: 0px 4px;
-    }
 `
 
 export const LanguageContainer = styled.div`
