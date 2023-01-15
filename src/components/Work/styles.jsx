@@ -119,7 +119,11 @@ export const ButtonContainer = styled.div`
 
 export const InfoContainer = styled.div``
 
+
 export const Paragraph = styled.p`
+    display:flex;
+    align-items: center;
+    justify-content: center;
     flex: 8;
     text-align: center;
     height: 100%;
