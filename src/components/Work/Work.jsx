@@ -80,7 +80,9 @@ const Work = ({english}) => {
                                 <Button onClick={() => setVideoPlayer(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
-                            <Techs>NextJS | ReactJS | Styled-Components</Techs>
+                            <TechContainer>
+                                <Techs>NextJS | ReactJS | Styled-Components</Techs>
+                            </TechContainer>
                     </CardHover>
                 </Card>
             </Content>    
@@ -113,7 +115,9 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setSpotify(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
-                        <Techs> ReactJS | Redux | Tailwind </Techs>
+                        <TechContainer>
+                            <Techs> ReactJS | Redux | Tailwind </Techs>
+                        </TechContainer>
                     </CardHover>
                 </Card>   
                 
@@ -140,7 +144,9 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setEcommerceInfo(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
-                        <Techs>NextJS | ReactJS | Stripe | Sanity | UseContext</Techs>
+                        <TechContainer>                            
+                            <Techs>NextJS | ReactJS | Stripe | Sanity | UseContext</Techs>
+                        </TechContainer>
                     </CardHover>
                 </Card>
 
@@ -166,7 +172,9 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setTikTok(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
-                        <Techs>ReactJS | Typescript | Tailwind | JWT | Sanity | Zustand</Techs>
+                        <TechContainer>                            
+                            <Techs>ReactJS | Typescript | Tailwind | JWT | Sanity | Zustand</Techs>
+                        </TechContainer>
                     </CardHover>
                 </Card>
                 
@@ -192,8 +200,9 @@ const Work = ({english}) => {
                                 <Button  onClick={() => setInglesComPablot(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
-                        <Techs> HTML | CSS | Javascript</Techs>
-
+                        <TechContainer>                            
+                            <Techs> HTML | CSS | Javascript</Techs>
+                        </TechContainer>
                     </CardHover>
                 </Card>
 
