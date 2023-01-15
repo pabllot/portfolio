@@ -167,6 +167,9 @@ export const Button = styled.button`
 export const Href = styled.a``
 
 export const Techs = styled.p`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     
     @media (max-width: 350px) {
