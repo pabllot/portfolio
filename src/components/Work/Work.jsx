@@ -29,7 +29,7 @@ const Work = ({english}) => {
                 </Title>
                 <SubTitle>
                     {`${english ? "That's a special section where I put some of the projects I made from scratch" 
-                    : 'Essa é uma seção especial onde coloco os projetos originais que fiz sozinho.'}`}
+                    : 'Essa é uma seção especial onde coloco meus projetos originais favoritos.'}`}
                 </SubTitle>
             </Wrapper>
             <Content>
@@ -81,55 +81,6 @@ const Work = ({english}) => {
                             </InfoContainer>                           
                         </ButtonContainer>
                     </CardHover>
-            </Card>
-
-            <Card style={{backgroundImage: `url(${cricket})`}} className='group'>                    
-                    <CardHover className='group-hover:opacity-100'>
-                        <Span>
-                            Drinking Game app
-                        </Span>
-                        <ButtonContainer>
-                            <Href target='_blank' rel="noreferrer" href='https://cricket-psi.vercel.app/'>
-                                <Button>Demo</Button>
-                            </Href>
-                            <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/cricket'>
-                                <Button>Code</Button>
-                            </Href>
-                            <InfoContainer>
-                                <div className={`${cricketInfo ? 'info' : 'noShow'}`}>
-                                    <Paragraph>{english ? "That's a drinking game that me and my friends are used to playing. We had to always have a pair of dice with us, but now we can play on this app. I've implemented all the functionalities of the game as well, so now there's NO MORE CHEATING" :
-                                    "Esse é um jogo de bebida que eu e meus amigos estamos acostumados a jogar. Tínhamos que ter sempre um par de dados conosco, mas agora podemos jogar neste app. Eu também implementei todas as funcionalidades do jogo, então agora não tem como trapacear"}</Paragraph>
-                                    <ButtonClose onClick={() => setCricketInfo(false)} ><AiFillCloseCircle/></ButtonClose>
-                                </div>
-                                <Button  onClick={() => setCricketInfo(true)}>+Info</Button>
-                            </InfoContainer>
-                        </ButtonContainer>
-                    </CardHover>
-            </Card>
-
-            <Card style={{backgroundImage: `url(${chores})`}} className='group'>                    
-                <CardHover className='group-hover:opacity-100'>
-                        <Span>
-                            House Chores app
-                        </Span>
-                        <ButtonContainer>
-                            <Href target='blank' rel="noreferrer" href='https://chores-ten.vercel.app/'>
-                                <Button>Demo</Button>
-                            </Href>
-                            <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/chores'>
-                                <Button>Code</Button>
-                            </Href>
-                            <InfoContainer>
-                                <div className={`${choresInfo ? 'info' : 'noShow'}`}>
-                                    <Paragraph>{english ? 
-                                    "I built this project from scratch in order to have an app to help me and my roomates organize our routine better, so I implemented a logic that we can type the current day and we have the chores each one of us is supposed to do this day." : 
-                                    "Construí esse projeto do zero para ter um app que ajudasse eu e meus colegas de quarto a organizar melhor nossa rotina, então implementei uma lógica que podemos digitar o dia atual e temos as tarefas que cada um de nós deve fazer neste dia ."}</Paragraph>
-                                    <ButtonClose onClick={() => setChoresInfo(false)} ><AiFillCloseCircle/></ButtonClose>
-                                </div>
-                                <Button  onClick={() => setChoresInfo(true)}>+Info</Button>
-                            </InfoContainer>
-                        </ButtonContainer>
-                </CardHover>
             </Card>
             </Content>    
 
