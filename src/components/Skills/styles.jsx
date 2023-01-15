@@ -84,14 +84,14 @@ export const Skill = styled.div`
 
 &:hover:after,
 &:hover:before {
-    border-color: #00e5ff;
+    border-color: #dcd9d9;
     width: 100%;
     height: 100%;
 }
 
 &:hover {
     transition: 0.5s;
-    color: #00e5ff;
+    color: #dedcdc;
 }
 
 `
