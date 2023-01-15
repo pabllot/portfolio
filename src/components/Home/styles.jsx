@@ -63,7 +63,7 @@ export const H2 = styled.h2`
 
     @media (max-width: 768px) {margin-left: 5px; font-size: 23px; }
     @media (max-width: 640px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
-    @media (max-width: 400px) {font-size: 1rem; line-height: 1; margin-left: 12px; }
+    @media (max-width: 400px) {font-size: 1.4rem; line-height: 1; margin-left: 12px; }
 `
 
 export const LanguageContainer = styled.div`
