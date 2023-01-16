@@ -173,8 +173,4 @@ export const Techs = styled.p`
         font-size: .7rem;}
 `
 export const TechContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90%`
+   `
