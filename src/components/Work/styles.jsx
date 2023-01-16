@@ -177,7 +177,7 @@ export const Href = styled.a``
 export const Techs = styled.p`
     font-size: 1rem;
     
-    @media (max-width: 350px) {
+    @media (max-width: 450px) {
         font-size: .7rem;}
 `
 export const TechContainer = styled.div`
@@ -185,4 +185,5 @@ export const TechContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 90%`
+    width: 90%
+    `
