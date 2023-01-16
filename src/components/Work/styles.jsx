@@ -177,6 +177,8 @@ export const Href = styled.a``
 export const Techs = styled.p`
     font-size: 1rem;
     
+    @media (max-width: 780px) {
+        font-size: .8rem;}
     @media (max-width: 450px) {
         font-size: .7rem;}
 `
