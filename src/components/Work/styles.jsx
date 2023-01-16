@@ -129,9 +129,14 @@ export const Paragraph = styled.p`
     text-align: center;
     height: 100%;
     padding: 18px;
+    font-size: 15px;
+    @media (max-width: 800px) {
+        font-size: 13px;
+    }
     @media (max-width: 450px) {
         font-size: 11px;
     }
+
 `
 
 export const ButtonClose = styled.button`
