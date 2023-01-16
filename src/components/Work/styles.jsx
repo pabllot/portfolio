@@ -49,7 +49,7 @@ export const Title = styled.p`
     font-weight: 700;
     display: inline;
     border-bottom-width: 4px;
-    border-bottom-color: #c929b9;
+    border-bottom-color: rgb(219 39 119); 
     color: rgb(209 213 219);
 
     @media (max-width: 400px) {   font-size: 1.4rem/* 30px */;
