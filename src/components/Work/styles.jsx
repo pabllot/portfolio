@@ -159,8 +159,12 @@ export const Button = styled.button`
     background-color: white;
     color: rgb(55 65 81);
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.75rem;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 450px) {
         display: flex;
         align-items: center;
@@ -175,7 +179,7 @@ export const Button = styled.button`
 export const Href = styled.a``
 
 export const Techs = styled.p`
-    font-size: 1rem;
+    font-size: .9rem;
     
     @media (max-width: 780px) {
         font-size: .8rem;}
