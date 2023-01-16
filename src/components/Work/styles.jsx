@@ -19,7 +19,8 @@ export const Container = styled.div`
         height: 250px;
         left: 0;
         top: 0;
-        border-radius: 10px;        
+        border-radius: 10px;  
+        max-width:100% ;
     }
 
     @media (min-width: 768px) {height: 1400px;}
@@ -128,7 +129,9 @@ export const Paragraph = styled.p`
     text-align: center;
     height: 100%;
     padding: 18px;
-    font-size: 17px;
+    @media (max-width: 450px) {
+        font-size: 11px;
+    }
 `
 
 export const ButtonClose = styled.button`
@@ -153,7 +156,14 @@ export const Button = styled.button`
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.75rem;
-
+    @media (max-width: 450px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 50px;
+        font-size: 0.8rem;
+    }
 
 `
 
@@ -166,4 +176,8 @@ export const Techs = styled.p`
         font-size: .7rem;}
 `
 export const TechContainer = styled.div`
-   `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%`
