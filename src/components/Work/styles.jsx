@@ -153,14 +153,7 @@ export const Button = styled.button`
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 1.75rem;
-    @media (max-width: 450px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 35px;
-        width: 50px;
-        font-size: 0.8rem;
-    }
+
 
 `
 
