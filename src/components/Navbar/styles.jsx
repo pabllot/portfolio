@@ -17,6 +17,8 @@ export const Container = styled.div`
 export const LogoContainer = styled.div`
 display: flex;
 gap: 40px;
+@media (max-width: 768px) {display: flex;}
+gap: 89px;
 `
 
 export const Logo = styled.img`
