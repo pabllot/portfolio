@@ -14,7 +14,10 @@ export const Container = styled.div`
     color: rgb(209 213 219);
 `
 
-export const LogoContainer = styled.div``
+export const LogoContainer = styled.div`
+display: flex;
+gap: 40px;
+`
 
 export const Logo = styled.img`
     width: 50px;
@@ -108,4 +111,24 @@ export const A = styled.a`
     align-items: center;
     width: 100%;
     color: rgb(209 213 219);
+`
+
+export const LanguageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+`
+
+export const Language = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 19px;
+    width: 29px;
+    border-radius: 5px;
+    background: transparent;
+
+ 
 `

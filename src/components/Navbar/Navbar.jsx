@@ -1,17 +1,29 @@
 import React, {useState} from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import logo from '../../assets/logo.png'
+import br from '../../assets/br.png'
+import usa from '../../assets/usa.png'
 import { Link } from 'react-scroll'
-import { Container, LogoContainer, Logo, ListLargeScreen, Li, HamburgerIcon, ListHamburguer, LiHamburguer, SocialMediaContainer, Linkedin, Github, Instagram, UL, A } from './styles'
+import { Container, LogoContainer, Logo, ListLargeScreen, Li, HamburgerIcon, ListHamburguer, LiHamburguer, SocialMediaContainer, Linkedin, Github, Instagram, UL, A, LanguageContainer, Language } from './styles'
 
-const Navbar = ({english}) => {
+const Navbar = ({english, setEnglish}) => {
     const [hamburguer, setHamburguer] = useState(false)
     const handleClick = () => setHamburguer(prev => !prev)
+    let shadowEnglish = english ? '0px 2px 20px #2C74B3' : ''
+    let shadowPortuguese = !english ? '0 2px 20px #2C74B3' : ''
 
   return (
     <Container>
         <LogoContainer>
             <Logo src={logo} alt='Logo'/>
+            <LanguageContainer>
+                <Language style={{boxShadow: shadowPortuguese}} onClick={()=>setEnglish(false)}>
+                    <img src={br} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
+                </Language>
+                <Language style={{boxShadow: shadowEnglish}} onClick={()=>setEnglish(true)}>
+                    <img src={usa} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
+                </Language>
+            </LanguageContainer>
         </LogoContainer>
     
         <ListLargeScreen>
