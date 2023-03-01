@@ -9,13 +9,14 @@ import { Container, LogoContainer, Logo, ListLargeScreen, Li, HamburgerIcon, Lis
 const Navbar = ({english, setEnglish}) => {
     const [hamburguer, setHamburguer] = useState(false)
     const handleClick = () => setHamburguer(prev => !prev)
-    let shadowEnglish = english ? '0px 2px 20px #2C74B3' : ''
-    let shadowPortuguese = !english ? '0 2px 20px #2C74B3' : ''
+    let shadowEnglish = english ? '0px 2px 15px #5e95c9' : ''
+    let shadowPortuguese = !english ? '0 2px 15px #5e95c9' : ''
 
   return (
     <Container>
         <LogoContainer>
             <Logo src={logo} alt='Logo'/>
+        </LogoContainer>
             <LanguageContainer>
                 <Language style={{boxShadow: shadowPortuguese}} onClick={()=>setEnglish(false)}>
                     <img src={br} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
@@ -24,7 +25,6 @@ const Navbar = ({english, setEnglish}) => {
                     <img src={usa} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
                 </Language>
             </LanguageContainer>
-        </LogoContainer>
     
         <ListLargeScreen>
             <Li>

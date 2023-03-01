@@ -27,7 +27,11 @@ export const Logo = styled.img`
 
 export const ListLargeScreen = styled.ul`
 display: none;
-@media (min-width: 768px) {display: flex;}
+@media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    }
 `
 
 export const Li = styled.li``
@@ -128,7 +132,7 @@ export const Language = styled.div`
     justify-content: center;
     cursor: pointer;
     height: 19px;
-    width: 29px;
+    width: 28px;
     border-radius: 5px;
     background: transparent;
 
