@@ -3,7 +3,7 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 import { useState } from 'react'
 import tikima from '../../assets/tikima.png'
 import ecommerce from '../../assets/ecommerce.png'
-import pablot from '../../assets/pablot.png'
+import ai from '../../assets/ai.png'
 import music from '../../assets/music.png'
 import video from '../../assets/video.png'
 import hw from '../../assets/hm.png'
@@ -178,30 +178,30 @@ const Work = ({english}) => {
                     </CardHover>
                 </Card>
                 
-                <Card style={{backgroundImage: `url(${pablot})`}} className='group'>                    
+                <Card style={{backgroundImage: `url(${ai})`}} className='group'>                    
                     <CardHover className='group-hover:opacity-100'>
                         <Span>
-                           My Comercial Website
+                           AI Image Generator
                         </Span>
                         <ButtonContainer>
-                            <Href target='blank' rel="noreferrer" href='https://pabllot.github.io/inglescompablot/'>
+                            <Href target='blank' rel="noreferrer" href='https://ai-generator.vercel.app/'>
                                 <Button>Site</Button>
                             </Href>
-                            <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/inglescompablot'>
+                            <Href target='blank' rel="noreferrer" href='https://github.com/pabllot/openAI_server'>
                                 <Button>Code</Button>
                             </Href>
                             <InfoContainer>
                                 <div className={`${inglesComPablot ? 'info' : 'noShow'}`}>
                                     <Paragraph>{english ? 
-                                    "My very first big project, I built a professional website to help me find more students as an English teacher. I used vanilla javascript, css and html on this project." : 
-                                    "Meu primeiro grande projeto, construí um site profissional para me ajudar a encontrar mais alunos como professor de inglês. Eu usei vanilla javascript, css e html neste projeto."}</Paragraph>
+                                    "Application integrated with an AI API that instanteniously creates an AI image based on your prompt" : 
+                                    "Aplicação integrada com API de IA que cria instantaneamente uma imagem baseado no seu pedido feita com inteligência artificial"}</Paragraph>
                                     <ButtonClose onClick={() => setInglesComPablot(false)} ><AiFillCloseCircle/></ButtonClose>
                                 </div>
                                 <Button  onClick={() => setInglesComPablot(true)}>+Info</Button>
                             </InfoContainer>
                         </ButtonContainer>
                         <TechContainer>                            
-                            <Techs> HTML | CSS | Javascript</Techs>
+                            <Techs> ReactJS | NodeJS | MongoDB | Cloudinary</Techs>
                         </TechContainer>
                     </CardHover>
                 </Card>
