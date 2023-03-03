@@ -9,8 +9,8 @@ import { Container, LogoContainer, Logo, ListLargeScreen, Li, HamburgerIcon, Lis
 const Navbar = ({english, setEnglish}) => {
     const [hamburguer, setHamburguer] = useState(false)
     const handleClick = () => setHamburguer(prev => !prev)
-    let shadowEnglish = english ? '0px 2px 15px #5e95c9' : ''
-    let shadowPortuguese = !english ? '0 2px 15px #5e95c9' : ''
+    let shadowEnglish = english ? '0px 1px 10px #5e95c9' : ''
+    let shadowPortuguese = !english ? '0 1px 10px #5e95c9' : ''
 
   return (
     <Container>
