@@ -128,6 +128,12 @@ export const LanguageContainer = styled.div`
     gap: 1rem;
     @media (max-width: 768px) {display: none;}
 `
+export const LanguageContainerMobile = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+`
 
 export const Language = styled.div`
     display: flex;

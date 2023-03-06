@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import br from '../../assets/br.png'
 import usa from '../../assets/usa.png'
 import { Link } from 'react-scroll'
-import { Container, LogoContainer, Logo, ListLargeScreen, Li, HamburgerIcon, ListHamburguer, LiHamburguer, SocialMediaContainer, Linkedin, Github, Instagram, UL, A, LanguageContainer, Language } from './styles'
+import { Container, LogoContainer, Logo, ListLargeScreen, LanguageContainerMobile, Li, HamburgerIcon, ListHamburguer, LiHamburguer, SocialMediaContainer, Linkedin, Github, Instagram, UL, A, LanguageContainer, Language } from './styles'
 
 const Navbar = ({english, setEnglish}) => {
     const [hamburguer, setHamburguer] = useState(false)
@@ -86,14 +86,14 @@ const Navbar = ({english, setEnglish}) => {
                 </Link>
             </LiHamburguer>
 
-            <LanguageContainer style={{marginTop: "40px"}}>
+            <LanguageContainerMobile style={{marginTop: "40px"}}>
                 <Language style={{boxShadow: shadowPortuguese}} onClick={()=>setEnglish(false)}>
                     <img src={br} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
                 </Language>
                 <Language style={{boxShadow: shadowEnglish}} onClick={()=>setEnglish(true)}>
                     <img src={usa} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
                 </Language>
-            </LanguageContainer>
+            </LanguageContainerMobile>
         </ListHamburguer>
 
         <SocialMediaContainer>
