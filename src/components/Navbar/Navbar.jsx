@@ -16,7 +16,6 @@ const Navbar = ({english, setEnglish}) => {
     <Container>
         <LogoContainer>
             <Logo src={logo} alt='Logo'/>
-        </LogoContainer>
             <LanguageContainer>
                 <Language style={{boxShadow: shadowPortuguese}} onClick={()=>setEnglish(false)}>
                     <img src={br} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
@@ -26,6 +25,7 @@ const Navbar = ({english, setEnglish}) => {
                 </Language>
             </LanguageContainer>
     
+        </LogoContainer>
         <ListLargeScreen>
             <Li>
                 <Link to='home' smooth={true} duration={500}>
