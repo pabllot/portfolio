@@ -12,6 +12,8 @@ export const Container = styled.div`
     padding-right: 1rem;
     background-color: rgb(10 25 47);
     color: rgb(209 213 219);
+    border-bottom: 1px solid rgb(10 25 57);
+    box-shadow: 0 2px 4px 0 rgb(10 25 57);
 `
 
 export const LogoContainer = styled.div`
