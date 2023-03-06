@@ -85,6 +85,15 @@ const Navbar = ({english, setEnglish}) => {
                 {`${english ? 'Contact' : 'Contato'}`}
                 </Link>
             </LiHamburguer>
+
+            <LanguageContainer style={{marginTop: "40px"}}>
+                <Language style={{boxShadow: shadowPortuguese}} onClick={()=>setEnglish(false)}>
+                    <img src={br} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
+                </Language>
+                <Language style={{boxShadow: shadowEnglish}} onClick={()=>setEnglish(true)}>
+                    <img src={usa} style={{width: '100%', height: '100%', objectFit: 'contain'}}/>
+                </Language>
+            </LanguageContainer>
         </ListHamburguer>
 
         <SocialMediaContainer>
