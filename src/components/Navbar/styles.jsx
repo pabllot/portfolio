@@ -71,9 +71,9 @@ export const ListHamburguer = styled.ul`
 export const LiHamburguer = styled(motion.li)`
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  border-bottom: 1px solid gray;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3.5rem;
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -129,11 +129,11 @@ export const LanguageContainerMobile = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 1.7rem;
 `;
 
 export const Language = styled.div`
-  width: 50px;
+  width: 35px;
 `;
 
 export const Portuguese = styled(motion.div)`
