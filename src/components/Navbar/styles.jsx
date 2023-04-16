@@ -39,7 +39,7 @@ export const ListLargeScreen = styled.ul`
   }
 `;
 
-export const Li = styled.li`
+export const Li = styled(motion.li)`
   font-weight: 500;
   transition: all 0.3s ease-in-out;
   &:hover {
@@ -68,7 +68,7 @@ export const ListHamburguer = styled.ul`
   align-items: center;
 `;
 
-export const LiHamburguer = styled.li`
+export const LiHamburguer = styled(motion.li)`
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 2rem;
@@ -125,7 +125,7 @@ export const A = styled.a`
   color: rgb(209 213 219);
 `;
 
-export const LanguageContainerMobile = styled.div`
+export const LanguageContainerMobile = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: flex-start;

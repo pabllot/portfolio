@@ -66,33 +66,38 @@ const Navbar = ({ english, setEnglish }) => {
       <HamburgerIcon onClick={handleClick}>{hamburguer ? <FaTimes /> : <FaBars />}</HamburgerIcon>
 
       <ListHamburguer hamburguer={hamburguer}>
-        <LiHamburguer>
+        <LiHamburguer initial={{ opacity: 0, y: "-120%" }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, type: "tween" }}>
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </LiHamburguer>
-        <LiHamburguer>
+        <LiHamburguer initial={{ opacity: 0, y: "-120%" }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, type: "tween" }}>
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             {`${english ? "About" : "Sobre"}`}
           </Link>
         </LiHamburguer>
-        <LiHamburguer>
+        <LiHamburguer initial={{ opacity: 0, y: "-120%" }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, type: "tween" }}>
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             {`${english ? "Skills" : "Habilidades"}`}
           </Link>
         </LiHamburguer>
-        <LiHamburguer>
+        <LiHamburguer initial={{ opacity: 0, y: "-120%" }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, type: "tween" }}>
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             {`${english ? "Projects" : "Projetos"}`}
           </Link>
         </LiHamburguer>
-        <LiHamburguer>
+        <LiHamburguer initial={{ opacity: 0, y: "-120%" }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, type: "tween" }}>
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             {`${english ? "Contact" : "Contato"}`}
           </Link>
         </LiHamburguer>
 
-        <LanguageContainerMobile style={{ marginTop: "40px" }}>
+        <LanguageContainerMobile
+          initial={{ opacity: 0, y: "-120%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, type: "tween" }}
+          style={{ marginTop: "40px" }}
+        >
           <Language onClick={() => setEnglish(false)}>
             <img alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </Language>
