@@ -9,6 +9,7 @@ const Contact = ({ english }) => {
         initial={{ opacity: 0, x: "-50%" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+        viewport={{ once: true }}
         method="POST"
         action="https://getform.io/f/2a68a64b-b315-46eb-85b7-b06de7ae91d0"
       >

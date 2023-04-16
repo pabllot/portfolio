@@ -12,6 +12,7 @@ const Project = ({ english, project, idx }) => {
         initial={{ opacity: 0, x: "-50%" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: idx * 0.2, type: "spring", stiffness: 100 }}
+        viewport={{ once: true }}
         style={{ backgroundImage: `url(${project.BackgroundImage})` }}
         className="group"
       >
