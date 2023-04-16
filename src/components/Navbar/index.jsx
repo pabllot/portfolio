@@ -30,8 +30,6 @@ import {
 const Navbar = ({ english, setEnglish }) => {
   const [hamburguer, setHamburguer] = useState(false);
   const handleClick = () => setHamburguer((prev) => !prev);
-  let shadowEnglish = english ? "0px 1px 10px #5e6062" : "";
-  let shadowPortuguese = !english ? "0 1px 10px #5e6062" : "";
 
   return (
     <Container>
@@ -96,31 +94,31 @@ const Navbar = ({ english, setEnglish }) => {
         </LiHamburguer>
 
         <LanguageContainerMobile style={{ marginTop: "40px" }}>
-          <Language style={{ boxShadow: shadowPortuguese }} onClick={() => setEnglish(false)}>
+          <Language onClick={() => setEnglish(false)}>
             <img alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </Language>
-          <Language style={{ boxShadow: shadowEnglish }} onClick={() => setEnglish(true)}>
+          <Language onClick={() => setEnglish(true)}>
             <img alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </Language>
         </LanguageContainerMobile>
       </ListHamburguer>
 
       {/* <LanguageContainer>
-        <Language style={{ boxShadow: shadowPortuguese }} onClick={() => setEnglish(false)}>
+        <Language  onClick={() => setEnglish(false)}>
           <img alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
         </Language>
-        <Language style={{ boxShadow: shadowEnglish }} onClick={() => setEnglish(true)}>
+        <Language  onClick={() => setEnglish(true)}>
           <img alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
         </Language>
       </LanguageContainer> */}
 
       <SocialMediaContainer>
         <UL>
-          <Portuguese style={{ boxShadow: shadowPortuguese }} onClick={() => setEnglish(false)}>
+          <Portuguese onClick={() => setEnglish(false)}>
             <Span>Português</Span>
             <LangImage alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </Portuguese>
-          <English style={{ boxShadow: shadowEnglish }} onClick={() => setEnglish(true)}>
+          <English onClick={() => setEnglish(true)}>
             <Span>English</Span>
             <LangImage alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </English>

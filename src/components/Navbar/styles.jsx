@@ -82,7 +82,7 @@ export const SocialMediaContainer = styled.div`
     display: flex;
     position: fixed;
     flex-direction: column;
-    bottom: 10%;
+    bottom: 5%;
     left: 0px;
   }
 `;
@@ -137,16 +137,6 @@ export const A = styled.a`
   color: rgb(209 213 219);
 `;
 
-// export const LanguageContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 1rem;
-//   @media (max-width: 768px) {
-//     display: none;
-//   }
-// `;
 export const LanguageContainerMobile = styled.div`
   display: flex;
   align-items: center;
@@ -159,12 +149,12 @@ export const Language = styled.div`
 `;
 
 export const Portuguese = styled.div`
-  width: 220px;
+  width: 190px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -160px;
+  margin-left: -130px;
   transition-duration: 300ms;
   background-color: #009c3b;
   cursor: pointer;
