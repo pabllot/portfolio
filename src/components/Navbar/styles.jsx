@@ -38,7 +38,13 @@ export const ListLargeScreen = styled.ul`
   }
 `;
 
-export const Li = styled.li``;
+export const Li = styled.li`
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
 
 export const HamburgerIcon = styled.div`
   z-index: 20;
@@ -76,7 +82,7 @@ export const SocialMediaContainer = styled.div`
     display: flex;
     position: fixed;
     flex-direction: column;
-    top: 42%;
+    bottom: 10%;
     left: 0px;
   }
 `;
@@ -131,15 +137,16 @@ export const A = styled.a`
   color: rgb(209 213 219);
 `;
 
-export const LanguageContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
+// export const LanguageContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 1rem;
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// `;
 export const LanguageContainerMobile = styled.div`
   display: flex;
   align-items: center;
@@ -148,12 +155,55 @@ export const LanguageContainerMobile = styled.div`
 `;
 
 export const Language = styled.div`
+  width: 50px;
+`;
+
+export const Portuguese = styled.div`
+  width: 220px;
+  height: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-left: -160px;
+  transition-duration: 300ms;
+  background-color: #009c3b;
   cursor: pointer;
-  height: 19px;
-  width: 28px;
-  border-radius: 5px;
-  background: transparent;
+
+  > img {
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    margin-left: -10px;
+  }
+`;
+export const English = styled.div`
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -120px;
+  transition-duration: 300ms;
+  background-color: #b40409;
+  cursor: pointer;
+
+  > img {
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    margin-left: -10px;
+  }
+`;
+
+export const Span = styled.span`
+  text-align: center;
+  width: 100%;
+  color: rgb(209 213 219);
+`;
+
+export const LangImage = styled.img`
+  max-width: 45px;
+  margin-right: 8px;
 `;

@@ -20,8 +20,11 @@ import {
   Instagram,
   UL,
   A,
-  LanguageContainer,
   Language,
+  Span,
+  LangImage,
+  Portuguese,
+  English,
 } from "./styles";
 
 const Navbar = ({ english, setEnglish }) => {
@@ -34,14 +37,6 @@ const Navbar = ({ english, setEnglish }) => {
     <Container>
       <LogoContainer>
         <Logo src={logo} alt="Logo" />
-        <LanguageContainer>
-          <Language style={{ boxShadow: shadowPortuguese }} onClick={() => setEnglish(false)}>
-            <img alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-          </Language>
-          <Language style={{ boxShadow: shadowEnglish }} onClick={() => setEnglish(true)}>
-            <img alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-          </Language>
-        </LanguageContainer>
       </LogoContainer>
       <ListLargeScreen>
         <Li>
@@ -110,8 +105,25 @@ const Navbar = ({ english, setEnglish }) => {
         </LanguageContainerMobile>
       </ListHamburguer>
 
+      {/* <LanguageContainer>
+        <Language style={{ boxShadow: shadowPortuguese }} onClick={() => setEnglish(false)}>
+          <img alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+        </Language>
+        <Language style={{ boxShadow: shadowEnglish }} onClick={() => setEnglish(true)}>
+          <img alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+        </Language>
+      </LanguageContainer> */}
+
       <SocialMediaContainer>
         <UL>
+          <Portuguese style={{ boxShadow: shadowPortuguese }} onClick={() => setEnglish(false)}>
+            <Span>Português</Span>
+            <LangImage alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+          </Portuguese>
+          <English style={{ boxShadow: shadowEnglish }} onClick={() => setEnglish(true)}>
+            <Span>English</Span>
+            <LangImage alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+          </English>
           <Linkedin>
             <A target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pablo-teixeira-466497238/">
               Linkedin <FaLinkedin size={30} />
