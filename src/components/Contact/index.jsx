@@ -7,7 +7,7 @@ const Contact = ({ english }) => {
       name="contact"
       initial={{ opacity: 0, x: "-50%" }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ delay: 0.1, type: "spring", stiffness: 120 }}
+      transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
     >
       <Form method="POST" action="https://getform.io/f/2a68a64b-b315-46eb-85b7-b06de7ae91d0">
         <Wrapper>

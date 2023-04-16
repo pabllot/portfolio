@@ -5,7 +5,7 @@ const About = ({ english }) => {
   return (
     <Container name="about">
       <SubContainer>
-        <Wrapper initial={{ opacity: 0, x: "-50%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1, type: "spring", stiffness: 120 }}>
+        <Wrapper initial={{ opacity: 0, x: "-50%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, type: "spring", stiffness: 120 }}>
           <TextBox>
             <Title>{`${english ? "About" : "Sobre"}`}</Title>
             <Paragraph>{`${
