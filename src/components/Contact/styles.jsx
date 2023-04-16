@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Container = styled(motion.div)`
+export const Container = styled.div`
   width: 100%;
   height: 900px;
   background-color: rgb(10 25 47);
@@ -11,7 +11,7 @@ export const Container = styled(motion.div)`
   justify-content: center;
 `;
 
-export const Form = styled.form`
+export const Form = styled(motion.form)`
   display: flex;
   flex-direction: column;
   max-width: 600px;
