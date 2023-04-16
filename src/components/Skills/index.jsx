@@ -7,6 +7,7 @@ import Node from "../../assets/node.png";
 import GitHub from "../../assets/github.png";
 import Styled from "../../assets/styled-components.png";
 import Typescript from "../../assets/typescript.svg";
+import { motion } from "framer-motion";
 
 const Skills = ({ english }) => {
   return (
@@ -20,35 +21,35 @@ const Skills = ({ english }) => {
         </TitleWrapper>
 
         <SkillsContainer>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, type: "spring", stiffness: 100 }}>
             <Image src={HTML} alt="html icon" />
             <Paragraph>HTML</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.3, type: "spring", stiffness: 100 }}>
             <Image src={CSS} alt="html icon" />
             <Paragraph>CSS</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.4, type: "spring", stiffness: 100 }}>
             <Image src={JavaScript} alt="html icon" />
             <Paragraph>JavaScript</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.5, type: "spring", stiffness: 100 }}>
             <Image src={Typescript} alt="html icon" />
             <Paragraph>Typescript</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.6, type: "spring", stiffness: 100 }}>
             <Image src={ReactImg} alt="html icon" />
             <Paragraph>React</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.7, type: "spring", stiffness: 100 }}>
             <Image src={Styled} alt="html icon" />
             <Paragraph>Styled-components</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.8, type: "spring", stiffness: 100 }}>
             <Image src={Node} alt="html icon" />
             <Paragraph>Node</Paragraph>
           </Skill>
-          <Skill>
+          <Skill initial={{ opacity: 0, x: "-20%" }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, type: "spring", stiffness: 100 }}>
             <Image src={GitHub} alt="html icon" />
             <Paragraph>Github</Paragraph>
           </Skill>

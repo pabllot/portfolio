@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -6,7 +7,7 @@ export const Container = styled.div`
   background-color: rgb(10 25 47);
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +29,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(motion.p)`
   color: rgb(219 39 119);
   font-size: 1.3rem;
   line-height: 2.6rem;
@@ -47,30 +48,31 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const H1 = styled.h1`
+export const H1 = styled(motion.h1)`
   font-size: 3rem;
-  line-height: 2.5rem;
-  font-weight: 500;
+  line-height: 3.5rem;
+  font-weight: 400;
   color: rgb(204 214 246);
 
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
+    font-size: 2.2rem;
   }
 
   @media (max-width: 640px) {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 3rem;
     margin-left: 12px;
   }
   @media (max-width: 400px) {
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1.2;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
     margin-left: 12px;
   }
 `;
-export const H2 = styled.h2`
+export const H2 = styled(motion.h2)`
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: 500;

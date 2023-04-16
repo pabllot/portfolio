@@ -17,7 +17,6 @@ import {
   SocialMediaContainer,
   Linkedin,
   Github,
-  Instagram,
   UL,
   A,
   Language,
@@ -103,31 +102,32 @@ const Navbar = ({ english, setEnglish }) => {
         </LanguageContainerMobile>
       </ListHamburguer>
 
-      {/* <LanguageContainer>
-        <Language  onClick={() => setEnglish(false)}>
-          <img alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-        </Language>
-        <Language  onClick={() => setEnglish(true)}>
-          <img alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-        </Language>
-      </LanguageContainer> */}
-
       <SocialMediaContainer>
         <UL>
-          <Portuguese onClick={() => setEnglish(false)}>
+          <Portuguese
+            initial={{ opacity: 0, y: -500 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, type: "tween" }}
+            onClick={() => setEnglish(false)}
+          >
             <Span>Português</Span>
             <LangImage alt="language" src={br} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </Portuguese>
-          <English onClick={() => setEnglish(true)}>
+          <English
+            initial={{ opacity: 0, y: -500 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, type: "tween" }}
+            onClick={() => setEnglish(true)}
+          >
             <Span>English</Span>
             <LangImage alt="language" src={usa} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </English>
-          <Linkedin>
+          <Linkedin initial={{ opacity: 0, y: -500 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, type: "tween" }}>
             <A target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/pablo-teixeira-466497238/">
               Linkedin <FaLinkedin size={30} />
             </A>
           </Linkedin>
-          <Github>
+          <Github initial={{ opacity: 0, y: -500 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, type: "tween" }}>
             <A target="_blank" rel="noreferrer" href="https://github.com/pabllot">
               Github <FaGithub size={30} />
             </A>

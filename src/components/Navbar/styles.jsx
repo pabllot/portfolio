@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -89,7 +90,7 @@ export const SocialMediaContainer = styled.div`
 
 export const UL = styled.ul``;
 
-export const Linkedin = styled.li`
+export const Linkedin = styled(motion.li)`
   width: 160px;
   height: 60px;
   display: flex;
@@ -102,7 +103,7 @@ export const Linkedin = styled.li`
     margin-left: -10px;
   }
 `;
-export const Github = styled.li`
+export const Github = styled(motion.li)`
   width: 160px;
   height: 60px;
   display: flex;
@@ -111,19 +112,6 @@ export const Github = styled.li`
   margin-left: -100px;
   transition-duration: 300ms;
   background-color: rgb(22 163 74);
-  &:hover {
-    margin-left: -10px;
-  }
-`;
-export const Instagram = styled.li`
-  width: 180px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: -120px;
-  transition-duration: 300ms;
-  background-color: rgb(202 138 4);
   &:hover {
     margin-left: -10px;
   }
@@ -148,7 +136,7 @@ export const Language = styled.div`
   width: 50px;
 `;
 
-export const Portuguese = styled.div`
+export const Portuguese = styled(motion.div)`
   width: 190px;
   height: 60px;
   display: flex;
@@ -167,7 +155,7 @@ export const Portuguese = styled.div`
     margin-left: -10px;
   }
 `;
-export const English = styled.div`
+export const English = styled(motion.div)`
   width: 180px;
   height: 60px;
   display: flex;

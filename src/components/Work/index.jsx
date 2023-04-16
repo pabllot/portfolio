@@ -10,8 +10,8 @@ const Work = ({ english }) => (
         <SubTitle>{`${english ? PersonalProjectsHeader[0].SubtitleEN : PersonalProjectsHeader[0].SubtitlePT}`}</SubTitle>
       </Wrapper>{" "}
       <Content>
-        {PersonalProjects.map((project) => (
-          <Project english={english} project={project} />
+        {PersonalProjects.map((project, idx) => (
+          <Project english={english} project={project} idx={idx + 1} />
         ))}
       </Content>
       <Wrapper style={{ marginTop: "10rem" }}>
@@ -19,8 +19,8 @@ const Work = ({ english }) => (
         <SubTitle>{`${english ? TutorialProjectsHeader[0].SubtitleEN : TutorialProjectsHeader[0].SubtitlePT}`}</SubTitle>
       </Wrapper>
       <Content>
-        {TutorialProjects.map((project) => (
-          <Project english={english} project={project} />
+        {TutorialProjects.map((project, idx) => (
+          <Project english={english} project={project} idx={idx + 1} />
         ))}
       </Content>
     </SubContainer>

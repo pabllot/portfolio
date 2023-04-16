@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -16,7 +17,7 @@ export const SubContainer = styled.div`
   gap: 15px;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   max-width: 1000px;
   width: 100%;
   padding-left: 1rem;
@@ -30,7 +31,7 @@ export const TextBox = styled.div`
   width: 600px;
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(motion.p)`
   font-size: 1.1rem;
   font-weight: 400;
   margin-top: 1rem;
@@ -40,7 +41,7 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled(motion.p)`
   font-size: 2rem /* 36px */;
   line-height: 2.5rem /* 40px */;
   font-weight: 700;

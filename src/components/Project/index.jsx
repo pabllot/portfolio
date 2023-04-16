@@ -3,12 +3,18 @@ import { AiFillCloseCircle } from "react-icons/ai";
 
 import { Button, ButtonClose, ButtonContainer, Card, CardHover, Href, InfoContainer, Paragraph, Span, TechContainer, Techs } from "./styles";
 
-const Project = ({ english, project }) => {
+const Project = ({ english, project, idx }) => {
   const [modal, setModal] = useState(false);
 
   return (
     <>
-      <Card style={{ backgroundImage: `url(${project.BackgroundImage})` }} className="group">
+      <Card
+        initial={{ opacity: 0, x: "-50%" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: idx * 0.2, type: "spring", stiffness: 100 }}
+        style={{ backgroundImage: `url(${project.BackgroundImage})` }}
+        className="group"
+      >
         <CardHover className="group-hover:opacity-100">
           <Span>{project.Title}</Span>
           <ButtonContainer>

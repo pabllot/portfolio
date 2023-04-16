@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   width: 100%;
@@ -55,7 +56,7 @@ export const SkillsContainer = styled.div`
   }
 `;
 
-export const Skill = styled.div`
+export const Skill = styled(motion.div)`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -64,45 +65,6 @@ export const Skill = styled.div`
   height: 10rem;
   width: 10rem;
   padding: 1rem;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    box-sizing: border-box;
-
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
-    transition: all 0.8s ease;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    box-sizing: border-box;
-
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
-    transition: all 0.8s ease;
-  }
-
-  &:hover:after,
-  &:hover:before {
-    border-color: #2c74b3;
-    width: 100%;
-    height: 100%;
-  }
-
-  &:hover {
-    transition: 0.5s;
-    color: #2c74b3;
-  }
 `;
 
 export const Image = styled.img`
