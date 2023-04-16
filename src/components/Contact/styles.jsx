@@ -22,12 +22,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 2.25rem /* 36px */;
+  font-size: 2rem /* 36px */;
   line-height: 2.5rem;
   font-weight: 700;
   display: inline;
-  border-bottom-width: 4px;
-  border-color: rgb(219 39 119);
   color: rgb(209 213 219);
 
   @media (max-width: 400px) {
@@ -39,6 +37,8 @@ export const Paragraph = styled.p`
   color: rgb(209 213 219);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
   @media (max-width: 400px) {
     font-size: 0.95rem;
   }
@@ -48,6 +48,8 @@ export const NameInput = styled.input`
   background-color: rgb(204 214 246);
   padding: 0.5rem;
   outline: none;
+  font-size: 1.1rem;
+  font-weight: 400;
 
   @media (max-width: 400px) {
     font-size: 0.95rem;
@@ -59,6 +61,8 @@ export const EmailInput = styled.input`
   margin-top: 1rem;
   margin-bottom: 1rem;
   outline: none;
+  font-size: 1.1rem;
+  font-weight: 400;
 
   @media (max-width: 400px) {
     font-size: 0.95rem;
@@ -68,6 +72,8 @@ export const EmailInput = styled.input`
 export const TextArea = styled.textarea`
   background-color: rgb(204 214 246);
   outline: none;
+  font-size: 1.1rem;
+  font-weight: 400;
 
   padding: 0.5rem;
   @media (max-width: 400px) {
@@ -88,6 +94,7 @@ export const Button = styled.button`
   margin-right: auto;
   display: flex;
   align-items: center;
+  font-weight: 400;
   @media (max-width: 400px) {
     font-size: 0.95rem;
   }

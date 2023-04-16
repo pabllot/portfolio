@@ -45,12 +45,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 1.875rem /* 30px */;
-  line-height: 2.25rem /* 36px */;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
   font-weight: 700;
   display: inline;
-  border-bottom-width: 4px;
-  border-bottom-color: rgb(219 39 119);
+
   color: rgb(209 213 219);
 
   @media (max-width: 400px) {
@@ -59,8 +58,9 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
-  padding-top: 1.5rem /* 24px */;
+  padding-top: 1rem /* 24px */;
   padding-bottom: 1.5rem;
+  font-weight: 400;
   @media (max-width: 400px) {
     font-size: 0.95rem;
     padding-top: 0.5rem /* 24px */;

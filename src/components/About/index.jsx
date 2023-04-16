@@ -1,11 +1,4 @@
-import {
-  Container,
-  Paragraph,
-  SubContainer,
-  TextBox,
-  Title,
-  Wrapper,
-} from "./styles";
+import { Container, Paragraph, SubContainer, TextBox, Title, Wrapper } from "./styles";
 import React from "react";
 
 const About = ({ english }) => {
@@ -13,10 +6,8 @@ const About = ({ english }) => {
     <Container name="about">
       <SubContainer>
         <Wrapper>
-          <Title>{`${english ? "About" : "Sobre"}`}</Title>
-        </Wrapper>
-        <Wrapper>
           <TextBox>
+            <Title>{`${english ? "About" : "Sobre"}`}</Title>
             <Paragraph>{`${
               english
                 ? "Hey there, my name is Pablo, I'm 25 years old. A frontend software developer and a series binge-watcher on my free time. Focused and commited professional always aiming to achieve goals that are set and help my team."
