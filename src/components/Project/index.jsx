@@ -36,7 +36,7 @@ const Project = ({ english, project, idx }) => {
             </InfoContainer>
           </ButtonContainer>
           <TechContainer>
-            <Techs>{Project.Techs}</Techs>
+            <Techs>{project.Techs}</Techs>
           </TechContainer>
         </CardHover>
       </Card>

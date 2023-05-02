@@ -4,8 +4,31 @@ import ai from "../assets/ai.png";
 import music from "../assets/music.png";
 import video from "../assets/video.png";
 import hw from "../assets/hm.png";
+import ondeir from "../assets/ondeir.png";
 
 export const PersonalProjects = [
+  {
+    BackgroundImage: ondeir,
+    Title: "Onde ir?",
+    Deploy: "https://onde-ir.vercel.app/",
+    Code: "https://github.com/pabllot/sightseeing",
+    DescPT:
+      "Eu queria aprimorar minhas habilidades em frontend e trabalhar com uma API de terceiros, então escolhi a API do Foursquare, que fornece dados sobre locais, restaurantes, lojas e parques em uma cidade. Eu a combinei com a API do Google Maps para criar um projeto sobre a minha cidade natal turística. O resultado permite que turistas encontrem os melhores lugares com filtros personalizados.",
+    DescEN:
+      "I wanted to improve my frontend skills and work with a third-party API, so I chose the Foursquare API, which provides data about locations, restaurants, shops, and parks in a city. I combined it with the Google Maps API to create a project about my touristy hometown. The result lets tourists find the best spots with personalized filters.",
+    Techs: "Typescript | React-Query | useContext | Sass | Swiper | Axios ",
+  },
+  {
+    BackgroundImage: video,
+    Title: "Video Player app",
+    Deploy: "https://next-desafio-video.vercel.app/",
+    Code: "https://github.com/pabllot/next-desafio-video",
+    DescPT:
+      "Eu desenvolvi esse projeto  para aplicar a uma posição de front-end, aprendi muito com isso. É um aplicativo de player de vídeo cheio de funcionalidades especificadas pelo cliente.",
+    DescEN:
+      "I've developed this application by myself in order to apply for a frontend position, I've learned so much from it. It's a video player app full of functionalities specified by the client.",
+    Techs: "NextJS | ReactJS | Styled-Components",
+  },
   {
     BackgroundImage: hw,
     Title: "English Practice App",
@@ -16,17 +39,6 @@ export const PersonalProjects = [
     DescEN:
       "That's a project I made in order to help my students practice what they have been learning on their classes, for each lesson there are 9 questions they should translate accordinly.",
     Techs: "ReactJS | Styled-Components | React Router Dom",
-  },
-  {
-    BackgroundImage: video,
-    Title: "Video Player app",
-    Deploy: "https://next-desafio-video.vercel.app/",
-    Code: "https://github.com/pabllot/next-desafio-video",
-    DescPT:
-      "Esse é o meu projeto favorito até agora. Eu o desenvolvi sozinho para aplicar a uma posição de front-end, aprendi muito com isso. É um aplicativo de player de vídeo cheio de funcionalidades especificadas pelo cliente.",
-    DescEN:
-      "That's my favorite project so far. I've developed it by myself in order to apply for a frontend position, I've learned so much from it. It's a video player app full of functionalities specified by the client.",
-    Techs: "NextJS | ReactJS | Styled-Components",
   },
 ];
 export const TutorialProjects = [
