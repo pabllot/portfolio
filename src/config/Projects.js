@@ -8,17 +8,6 @@ import ondeir from "../assets/ondeir.png";
 
 export const PersonalProjects = [
   {
-    BackgroundImage: ondeir,
-    Title: "Onde ir?",
-    Deploy: "https://onde-ir.vercel.app/",
-    Code: "https://github.com/pabllot/sightseeing",
-    DescPT:
-      "Eu queria aprimorar minhas habilidades em frontend e trabalhar com uma API de terceiros, então escolhi a API do Foursquare, que fornece dados sobre locais, restaurantes, lojas e parques em uma cidade. Eu a combinei com a API do Google Maps para criar um projeto sobre a minha cidade natal turística. O resultado permite que turistas encontrem os melhores lugares com filtros personalizados.",
-    DescEN:
-      "I wanted to improve my frontend skills and work with a third-party API, so I chose the Foursquare API, which provides data about locations, restaurants, shops, and parks in a city. I combined it with the Google Maps API to create a project about my touristy hometown. The result lets tourists find the best spots with personalized filters.",
-    Techs: "Typescript | React-Query | useContext | Sass | Swiper | Axios ",
-  },
-  {
     BackgroundImage: video,
     Title: "Video Player app",
     Deploy: "https://next-desafio-video.vercel.app/",
@@ -40,6 +29,17 @@ export const PersonalProjects = [
       "That's a project I made in order to help my students practice what they have been learning on their classes, for each lesson there are 9 questions they should translate accordinly.",
     Techs: "ReactJS | Styled-Components | React Router Dom",
   },
+  {
+    BackgroundImage: ondeir,
+    Title: "Onde ir?",
+    Deploy: "https://onde-ir.vercel.app/",
+    Code: "https://github.com/pabllot/sightseeing",
+    DescPT:
+      "Eu queria aprimorar minhas habilidades em frontend e trabalhar com uma API de terceiros, então escolhi a API do Foursquare, que fornece dados sobre locais, restaurantes, lojas e parques em uma cidade. Eu a combinei com a API do Google Maps para criar um projeto sobre a minha cidade natal turística. O resultado permite que turistas encontrem os melhores lugares com filtros personalizados.",
+    DescEN:
+      "I wanted to improve my frontend skills and work with a third-party API, so I chose the Foursquare API, which provides data about locations, restaurants, shops, and parks in a city. I combined it with the Google Maps API to create a project about my touristy hometown. The result lets tourists find the best spots with personalized filters.",
+    Techs: "Typescript | React-Query | useContext | Sass | Swiper | Axios ",
+  },
 ];
 export const TutorialProjects = [
   {
@@ -49,7 +49,8 @@ export const TutorialProjects = [
     Code: "https://github.com/pabllot/music-player",
     DescPT:
       "Neste projeto desenvolvi um aplicativo para escutar música semelhante ao spotify com todas as suas funcionalidades, foi uma ótima experiência e aprendi muito com isso",
-    DescEN: "On this project I build a music player app similar to spotify with all its funcionalities, it was a great experience and I learned a lot from it",
+    DescEN:
+      "On this project I build a music player app similar to spotify with all its funcionalities, it was a great experience and I learned a lot from it",
     Techs: "ReactJS | Redux | Tailwind",
   },
   {
@@ -89,15 +90,18 @@ export const PersonalProjectsHeader = [
   {
     TitlePT: "Projetos Originais",
     TitleEN: "Original Projects",
-    SubtitlePT: "Essa é uma seção especial onde coloco meus projetos originais favoritos.",
-    SubtitleEN: "That's a special section where I put some of the projects I made from scratch.",
+    SubtitlePT:
+      "Essa é uma seção especial onde coloco meus projetos originais favoritos.",
+    SubtitleEN:
+      "That's a special section where I put some of the projects I made from scratch.",
   },
 ];
 export const TutorialProjectsHeader = [
   {
     TitlePT: "Projetos Tutoriais",
     TitleEN: "Tutorial Projects",
-    SubtitlePT: "Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.",
+    SubtitlePT:
+      "Projetos onde eu buscava melhorar minhas habilidades e aprender coisas novas.",
     SubtitleEN: "Projects made from tutorials in order to improve my skills.",
   },
 ];
