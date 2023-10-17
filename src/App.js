@@ -8,7 +8,7 @@ import Work from "./components/Work";
 import { Container } from "./styles";
 
 function App() {
-  const [english, setEnglish] = useState(false);
+  const [english, setEnglish] = useState(true);
 
   return (
     <Container>
