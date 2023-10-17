@@ -10,7 +10,9 @@ const Home = ({ english }) => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, type: "spring", stiffness: 120 }}
           viewport={{ once: true }}
-        >{` ${english ? "Welcome to my portfolio" : "Bem vindo ao meu portifólio"}`}</Paragraph>
+        >{` ${
+          english ? "Welcome to my portfolio" : "Bem vindo ao meu portifólio"
+        }`}</Paragraph>
         <H1
           initial={{ opacity: 0, x: "-50%" }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -24,7 +26,9 @@ const Home = ({ english }) => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
           viewport={{ once: true }}
-        >{`${english ? "I'm a Front-End Developer" : "Desenvolvedor Front-End"}`}</H2>
+        >{`${
+          english ? "I'm a Full Stack Developer" : "Desenvolvedor Full Stack"
+        }`}</H2>
       </Wrapper>
     </Container>
   );
