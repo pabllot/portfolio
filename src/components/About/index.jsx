@@ -1,4 +1,11 @@
-import { Container, Paragraph, SubContainer, TextBox, Title, Wrapper } from "./styles";
+import {
+  Container,
+  Paragraph,
+  SubContainer,
+  TextBox,
+  Title,
+  Wrapper,
+} from "./styles";
 import React from "react";
 
 const About = ({ english }) => {
@@ -13,11 +20,67 @@ const About = ({ english }) => {
         >
           <TextBox>
             <Title>{`${english ? "About" : "Sobre"}`}</Title>
-            <Paragraph>{`${
-              english
-                ? "My name is Pablo Teixeira, and I'm a skilled frontend developer with a passion for technology. With my expertise in cutting-edge technologies and best practices in development, I excel at creating highly responsive, scalable, and maintainable web applications. I take pride in my unwavering commitment to project success, and I always strive to find innovative and efficient solutions to overcome any challenges that may arise during the development process. With my technical prowess and creative problem-solving skills, I'm confident in my ability to deliver exceptional results for any project I work on."
-                : "Meu nome é Pablo Teixeira, tenho 25 anos. Sou um desenvolvedor frontend e maratonador de série nas horas vagas. Com meu conhecimento em tecnologias modernas e boas práticas de desenvolvimento, sou capaz de criar aplicações web responsivas, escaláveis e fáceis de manter. Meu comprometimento com o sucesso do projeto é sempre prioridade e busco soluções criativas e eficientes para cada desafio que surge durante o desenvolvimento."
-            }`}</Paragraph>
+            <Paragraph>
+              {english ? (
+                <>
+                  <p>
+                    As a FullStack developer I am passionate about programming
+                    and constantly seek continuous learning. I have extensive
+                    experience with modern technologies such as ReactJS,
+                    TypeScript, NodeJS, and MySQL.{" "}
+                  </p>
+                  <p>
+                    Furthermore, my CSS skills are advanced, and I am proficient
+                    in tools like Sass, Styled-Components, and Tailwind,
+                    utilizing them according to the specific needs of each
+                    project and team.
+                  </p>
+                  <p>
+                    I also possess broad knowledge of important development
+                    libraries such as React-Query, Zustand, and others, which
+                    enhance code organization and improve performance.
+                  </p>{" "}
+                  I have experience in MySQL administration using phpMyAdmin for
+                  database management. I have worked with useful and practical
+                  libraries such as Toastify, Framer Motion, Bootstrap,
+                  Ant-Design, and Multer in my day-to-day web development tasks.
+                  <p>
+                    With my expertise in modern technologies and good
+                    development practices, I am capable of creating responsive,
+                    scalable, and maintainable web applications. My commitment
+                    to project success is always a priority, and I strive to
+                    find creative and efficient solutions for every challenge
+                    that arises during the development process.
+                  </p>
+                </>
+              ) : (
+                <p>
+                  Desenvolvedor FullStack apaixonado por programação, estou
+                  sempre em busca de aprendizado constante. Tenho ampla
+                  experiência em tecnologias modernas, como Next, React,
+                  TypeScript e Node. Além disso, minhas habilidades em CSS são
+                  avançadas, com domínio de ferramentas como Sass,
+                  Styled-Components e Tailwind, utilizadas de acordo com as
+                  necessidades de cada projeto e equipe. Também possuo amplo
+                  conhecimento em bibliotecas importantes para o
+                  desenvolvimento, como React-Query e outras, que agregam
+                  organização e melhorias de performance ao código. Tenho
+                  experiência em administração de MySQL utilizando phpmyadmin
+                  para gerenciamento de bancos de dados. Experiência com
+                  gerenciamento avançado de aplicações Node em produção usando
+                  pm2. Experiência com processamento de solicitações HTTP usando
+                  apache2. Já trabalhei com bibliotecas como Toastify, Framer
+                  Motion , Bootstrap, Ant-Design e Multer que são bastante úteis
+                  e práticas no dia a dia do desenvolvimento web. Cursando
+                  Analise e Desenvolvimento de Sistemas. Com meu conhecimento em
+                  tecnologias modernas e boas práticas de desenvolvimento, sou
+                  capaz de criar aplicações web responsivas, escaláveis e fáceis
+                  de manter. Meu comprometimento com o sucesso do projeto é
+                  sempre prioridade e busco soluções criativas e eficientes para
+                  cada desafio que surge durante o desenvolvimento.
+                </p>
+              )}
+            </Paragraph>
           </TextBox>
         </Wrapper>
       </SubContainer>

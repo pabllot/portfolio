@@ -3,9 +3,20 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-color: rgb(10 25 47);
+  margin-bottom: -8rem;
   color: rgb(209 213 219);
+  @media only screen and (max-width: 990px) {
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+  }
+  @media only screen and (max-width: 400px) {
+    min-height: 100vh;
+    margin: 2rem 0;
+    margin-top: 7rem;
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -28,15 +39,16 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const TextBox = styled.div`
-  width: 600px;
+  width: 700px;
 `;
 
-export const Paragraph = styled(motion.p)`
+export const Paragraph = styled(motion.div)`
   font-size: 1.1rem;
   font-weight: 400;
   margin-top: 1rem;
-  @media only screen and (max-width: 400px) {
-    font-size: 0.95rem;
+  text-align: justify;
+  @media only screen and (max-width: 992px) {
+    font-size: 0.9rem;
     padding: 0 1rem;
   }
 `;
