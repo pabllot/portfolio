@@ -1,7 +1,19 @@
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-import { Button, ButtonClose, ButtonContainer, Card, CardHover, Href, InfoContainer, Paragraph, Span, TechContainer, Techs } from "./styles";
+import {
+  Button,
+  ButtonClose,
+  ButtonContainer,
+  Card,
+  CardHover,
+  Href,
+  InfoContainer,
+  Paragraph,
+  Span,
+  TechContainer,
+  Techs,
+} from "./styles";
 
 const Project = ({ english, project, idx }) => {
   const [modal, setModal] = useState(false);
@@ -22,12 +34,14 @@ const Project = ({ english, project, idx }) => {
             <Href target="blank" rel="noreferrer" href={project.Deploy}>
               <Button>Site</Button>
             </Href>
-            <Href target="blank" rel="noreferrer" href={project.Code}>
+            {/* <Href target="blank" rel="noreferrer" href={project.Code}>
               <Button>Code</Button>
-            </Href>
+            </Href> */}
             <InfoContainer>
               <div className={`${modal ? "info" : "noShow"}`}>
-                <Paragraph>{`${english ? project.DescEN : project.DescPT}`}</Paragraph>
+                <Paragraph>{`${
+                  english ? project.DescEN : project.DescPT
+                }`}</Paragraph>
                 <ButtonClose onClick={() => setModal(false)}>
                   <AiFillCloseCircle />
                 </ButtonClose>
